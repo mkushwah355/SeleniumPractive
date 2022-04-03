@@ -21,7 +21,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class ReadPropFile {
 
-	public static void main(String[] arg) throws IOException {
+	public static void main(String[] arg) throws IOException, Exception {
 		WebDriver driver = null;
 		// ini the properties class of java
 		Properties prop = new Properties();
@@ -51,6 +51,7 @@ public class ReadPropFile {
 		driver.findElement(By.xpath(googleSearchButton)).click();
 		WebElement s1 = driver.findElement(By.xpath(prop.getProperty("xpathOfSearchreResultCount")));
 		System.out.println("Total search result: " + s1.getText());
+		Thread.sleep(3000);
 		driver.close();
 
 	}
