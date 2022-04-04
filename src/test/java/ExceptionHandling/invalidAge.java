@@ -1,5 +1,10 @@
 package ExceptionHandling;
 
-public class invalidAge {
+public class invalidAge extends Exception {
+	public invalidAge(String s) {
+
+		super(s);
+
+	}
 
 }
