@@ -17,7 +17,7 @@ public class ArithematicExceptionPrac {
 		} catch (Exception e) {
 			System.out.println("Exception:  " + e);
 		}
-			//next line of code outside try catch block
+		// next line of code outside try catch block
 		System.out.println("rest of the code");
 	}
 
