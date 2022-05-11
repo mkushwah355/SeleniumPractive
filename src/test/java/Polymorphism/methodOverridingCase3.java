@@ -9,7 +9,7 @@ class methodOverridingCase3 {
 }
 class STU extends methodOverridingCase2{
 	
-	void show() throws Exception
+	void show()
 	{
 		super.show();
 		System.out.println("print 2");
