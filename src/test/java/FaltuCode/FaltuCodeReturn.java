@@ -1,23 +1,18 @@
 package FaltuCode;
 
-class A {
-	public static void main (String[] arg){
-		
-		String s1 = "Mayank Kushwah";
-		int s2= s1.length();///14 (14-1=13 and h is at 13th place)
-		System.out.println("Length of String: " + s2);
-		String rev= "";
-		//char[] s3= s1.toCharArray();
-		
-		for (int i=s2-1;i>=0;i--){
-			rev = rev+s1.charAt(i);
-			//s1.charAt(i);
-			
-		}     //test git fetch
-		
-		System.out.println(rev);
-		
-	}
-	
-	
-}
+import java.text.Collator;
+import java.util.*;
+import java.util.stream.Collectors;   
+class CompareArrayListExample7  
+{   
+public static void main(String[] args)   
+{   
+ArrayList<String> firstList  = new ArrayList<String>(Arrays.asList("Java", "Python", "Ruby", "Go"));  
+System.out.println("First List: "+firstList);   
+ArrayList<String> secondList = new ArrayList<String>(Arrays.asList("Java", "Python", "Ruby", "Go", "Perl"));  
+System.out.println("Second List: "+secondList);  
+// Finds common elements   
+//System.out.println("common elements: " + firstList.stream().filter(secondList::contains).collect(Collator));
+System.out.print("Common elements: " +firstList.stream().filter(secondList::contains).collect(Collectors.toList()));   
+}   
+}  
