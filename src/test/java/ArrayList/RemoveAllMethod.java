@@ -2,7 +2,7 @@ package ArrayList;
 
 import java.util.ArrayList;
 
-/*Aim: To print the unique element of list(finding the missing element)*/
+/*Aim: To print the unique element of list(finding the missing element )*/
 
 public class RemoveAllMethod {
 			
