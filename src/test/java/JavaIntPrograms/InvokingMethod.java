@@ -21,7 +21,7 @@ package JavaIntPrograms;
 
 		 Student s1 = new Student();  //main method name (i.e. Student)
 
-			s1.id = 123;
+			s1.id=123;
 			s1.name = "efe";
 
 			s1.display();}
