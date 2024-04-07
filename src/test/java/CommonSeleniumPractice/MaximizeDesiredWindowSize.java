@@ -10,7 +10,7 @@ public class MaximizeDesiredWindowSize {
 	public static void main (String []arg) throws Exception{
 		
 	
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\mayan\\workspace\\libs\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","E:\\\\Automation\\\\selenium-java-4.18.1\\\\chromedriver\\\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.google.com/");
 		//to maximize the window in full size
