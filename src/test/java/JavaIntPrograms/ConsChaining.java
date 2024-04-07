@@ -1,6 +1,6 @@
 package JavaIntPrograms;
 
-/*class ConsChaining {
+/*class ConsChaining {  
 
 	
 	ConsChaining() {
