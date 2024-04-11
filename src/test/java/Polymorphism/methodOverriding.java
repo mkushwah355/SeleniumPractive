@@ -6,7 +6,7 @@ class test {
 	}	
 }
 	
-class ABC extends test {
+class methodOverriding extends test {
 	
 	void show(){
 		//super.show();
@@ -14,7 +14,7 @@ class ABC extends test {
 	}
 	
 	public static void main (String []arg){
-		ABC a= new ABC();
+		methodOverriding a= new methodOverriding();
 		a.show();
 		test b=new test();
 		b.show();
