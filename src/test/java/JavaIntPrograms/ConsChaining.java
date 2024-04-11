@@ -30,7 +30,7 @@ class ConsChaining1 extends Const2{
 	ConsChaining1(int a, String b){
 		super(1,"dsd",2);
 		
-		System.out.println("ss");
+ 	System.out.println("ss");
 		
 	}
 	ConsChaining1(){

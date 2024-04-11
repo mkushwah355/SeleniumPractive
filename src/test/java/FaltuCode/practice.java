@@ -1,24 +1,32 @@
 package FaltuCode;
 
- class practice{
+abstract class vehicle{
 	
-	int id;
-	String name;
+	abstract int getNoOfwheels();
 	
+}
+
+class Car extends vehicle{
 	
-	void display() {
-		/*int id=123;
-		String name="dsds";*/
-		System.out.println(id + name);
+	int getNoOfwheels() {
+	
+		return 4;
+			}
+	
+}
+class Bus extends vehicle{
+	int getNoOfwheels() {
+		
+		return 6;
+			}
+}
+
+class practice{
+	public static void main (String []arg) {
+		Car s1= new Car();
+		System.out.println(s1.getNoOfwheels());
+		Bus s2= new Bus();
+		System.out.println(s2.getNoOfwheels());
 		
 	}
-		 public static void main (String []arg) {
-		    	
-			 practice s1 = new practice();
-		    	
-		    	s1.id=123;
-		    	s1.name="efe";
-		    	
-		    	s1.display();}
-	 }
-	
+}
