@@ -1,4 +1,4 @@
-package FaltuCode;
+package faltuCode;
 
 import java.text.Collator;
 import java.util.*;
