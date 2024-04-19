@@ -1,21 +1,21 @@
 package Abstraction;
 import Abstraction.AbstractClass;
 
-abstract class vehicle1{
+  abstract class vehicle1{
 	
-	abstract int getNoOfWheels();
+	    abstract int getNoOfWheels();
 	
 }
 
 class Auto extends vehicle1{
-	int getNoOfWheels() {
+	 int getNoOfWheels() {
 		
 		return 3;
 	}
 }
 
 class Bus extends vehicle1{
-	int getNoOfWheels() {
+	 int getNoOfWheels() {
 		
 		return 6;
 	}

@@ -26,7 +26,7 @@ public class ReadPropFile {
 		// ini the properties class of java
 		Properties prop = new Properties();
 		// ini FileInputStream class of java to get the input file
-		FileInputStream ip = new FileInputStream("C:\\Users\\mayan\\workspace\\SeleniumPractice\\config.properties");
+		FileInputStream ip = new FileInputStream("C:\\git projects\\SeleniumPractive\\config.properties");
 		// to load the input file
 		prop.load(ip);
 
@@ -42,7 +42,7 @@ public class ReadPropFile {
 		// to launch the broswer, need to ini chromedriver
 		if (browerType.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver",
-					"C:\\Users\\mayan\\workspace\\libs\\drivers\\chromedriver.exe");
+					"E:\\Automation\\selenium-java-4.18.1\\chromedriver\\chromedriver.exe");
 			driver = new ChromeDriver();
 
 		}

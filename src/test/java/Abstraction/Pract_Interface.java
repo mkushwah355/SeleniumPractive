@@ -1,10 +1,11 @@
 package Abstraction;
 
-interface Pract_Interface1 {
+ interface Pract_Interface1 {
 
-	public void m1();
+	 public void m1();
 
-	public void m2();
+	 public void m2();
+
 }
 
 abstract class ServiceProvider implements Pract_Interface1 {

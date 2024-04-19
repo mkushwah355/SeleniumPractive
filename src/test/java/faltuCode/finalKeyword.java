@@ -1,8 +1,8 @@
 
-package FaltuCode;
+package faltuCode;
 
 public class finalKeyword{
-	private static void main(String []agr) {
+	public static void main(String []agr) {
 	
 		finalKeyword s =new finalKeyword();
 		
