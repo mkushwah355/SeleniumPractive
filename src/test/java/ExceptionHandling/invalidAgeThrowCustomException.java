@@ -1,5 +1,6 @@
 package ExceptionHandling;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 class invalidAgeException extends Exception {

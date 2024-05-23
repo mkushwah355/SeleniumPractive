@@ -113,7 +113,7 @@ if(num[i]==0)
 numlist.add(num[i]);
 }
 
-System.out.println(numlist);
+//System.out.println(numlist);
  }
 
 
