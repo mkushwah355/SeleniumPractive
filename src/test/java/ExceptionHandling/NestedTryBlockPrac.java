@@ -29,7 +29,7 @@ public class NestedTryBlockPrac {
 
 		// 1st catch block
 		} catch (Exception e) {
-			System.out.println(e);
+			//System.out.println(e);
 		}
 
 	}
