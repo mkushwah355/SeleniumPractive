@@ -1,4 +1,4 @@
-package CommonSeleniumPractice;
+package seleniumCommonPractice;
 
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Point;

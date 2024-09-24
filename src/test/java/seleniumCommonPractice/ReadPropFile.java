@@ -7,7 +7,7 @@
    d. text= JavaTpoint
    e. xpathOfGoogleSearchButton= //div[@class='FPdoLc lJ9FBc']//input[@name='btnK'] 
 */
-package CommonSeleniumPractice;
+package seleniumCommonPractice;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
