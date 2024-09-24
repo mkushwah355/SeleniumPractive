@@ -1,67 +1,46 @@
 package faltuCode;
-import java.util.*;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.Stack;
-import java.util.Vector;
 
-class practice implements Comparable{
-	
-	String name;
-	int id;
-	
-	practice(String name, int id){
-		this.name=name;
-		this.id= id;
-}  
-	public String toString() {
-		return name+"--"+id;
-	}
-	public int compareTo(Object obj) {
-		 
-		 int id1= this.id;
-		 practice I1= (practice)obj;
-		 int id2= I1.id;
-		 if (id1<id2)
-			 return -1;
-		 else if(id1>id2)
-			 return +1;
-		 else 
-			 return 0;
-		 
-	 }
-	
-	public static void main (String []arg) {
-		
-		practice e1= new practice("nag", 101);
-		practice e2= new practice("sag",102);
-		practice e3= new practice("chag",103);
-		practice e4=new practice ("baag",104);		
-		
-		ArrayList t= new ArrayList();
-		t.add(e1);
-		t.add(e2);
-		t.add(e3);
-		t.add(e4);
-		System.out.println(t);
-		TreeSet t1= new TreeSet(new mycomparator7());
-		t1.add(e1);
-		t1.add(e2);
-		t1.add(e3);
-		t1.add(e4);
-		System.out.println(t1);
-}}
 
-class mycomparator7 implements Comparator {
-	public int compare(Object obj1, Object obj2) {
-		practice c1= (practice)obj1;
-		practice c2=(practice)obj2;
-		String S1=c1.name;
-		String S2=c2.name;
-		return S1.compareTo(S2);
+import java.io.File;
+import java.io.IOException;
+import java.sql.Time;
+import java.util.Date;
+import java.util.concurrent.TimeUnit;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.io.FileHandler;
+import org.openqa.selenium.support.ui.*;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import java.time.Duration;
+
+class practice {
+
+	public static void main(String[] args) throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver","E:\\Automation\\selenium-java-4.18.1\\ChromeDriver 128\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+			driver.get("https://www.worldometers.info/");	
+			driver.manage().window().maximize();
+			try {
+			 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));		
+			WebElement d=  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@rel='current_population']//span[8]")));
+		           d.getAttribute("value");
+			
+			System.out.println(d);
+			} catch(Exception e) {
+				System.out.println(e);
+			}
+			driver.close();
+		
+
 	}
+
+	
 
 }
-
-
-	 

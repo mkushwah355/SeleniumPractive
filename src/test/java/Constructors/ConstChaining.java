@@ -10,7 +10,7 @@ package Constructors;
 		 System.out.println("Parameterized constructor of base class");
 }}
 //child created to call the base class constructor. super() used to call base class constructor
-//if won't extend base class in child class then super on't be able to identity the base class.
+//if won't extend base class in child class then super won't be able to identify the base class.
 //Constructors cannot be inherited or override.
 class test extends ConstChaining1  {
 	

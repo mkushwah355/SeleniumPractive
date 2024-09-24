@@ -1,4 +1,4 @@
-package CommonSeleniumPractice;
+package seleniumCommonPractice;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class ChromeLaunch {
 
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver","E:\\Automation\\selenium-java-4.18.1\\chromedriver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","E:\\Automation\\selenium-java-4.18.1\\ChromeDriver 128\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 			driver.get("https://www.google.com");
 			String s1= driver.getTitle();

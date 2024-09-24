@@ -465,8 +465,8 @@ public static void main(String[] args) {
 // InterviewQuestions.charCount("aabbbbccd");
 // InterviewQuestions.duplicateChar("vivek verma");
  //InterviewQuestions.reverseString("Vivek Verma");
-// InterviewQuestions.reverseScentence("Hello Java! This is a test.");
-// InterviewQuestions.reverseEachword("Vivek Verma");
+ InterviewQuestions.reverseScentence("Hello Java! This is a test");
+ //InterviewQuestions.reverseEachword("Vivek Verma");
 // InterviewQuestions.findDuplicates();
 // InterviewQuestions.removeDuplicatesFromArray();
 // InterviewQuestions.sumofSubArray();
@@ -474,7 +474,7 @@ public static void main(String[] args) {
 // InterviewQuestions.maxProfit();
 // InterviewQuestions.maximumSumSubArray();
 // InterviewQuestions.subStringMethod();
-InterviewQuestions.swapString();
+//InterviewQuestions.swapString();
 // InterviewQuestions.fibonacci(8);
 // InterviewQuestions.sumofDigits(123);
 // InterviewQuestions.reversetheNumber(45823);
