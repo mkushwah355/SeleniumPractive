@@ -3,6 +3,7 @@ package ExceptionHandling;
 class FinalKeywordPrac {
 
 	final int age = 18;
+	
 	void display() {
 		int age; // = 18;
 	}

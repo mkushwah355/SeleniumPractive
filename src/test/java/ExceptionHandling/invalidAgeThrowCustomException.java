@@ -33,9 +33,11 @@ class invalidAgeException extends Exception {
 
 		} catch (Exception e) {
 			// printstacktrace method used to display the exception
-			e.printStackTrace();
+			//e.printStackTrace();
+			System.out.println(e);
 		}
-		System.out.println("Voting done");
+		finally {
+		System.out.println("Voting done");}
 
 	}
 

@@ -15,8 +15,8 @@ public class ConstruOverloading {
 	}
 	public static void main (String []arg) {
 		ConstruOverloading t1= new ConstruOverloading(10.5);
-		ConstruOverloading t2=new ConstruOverloading(10);
-		ConstruOverloading t3=new ConstruOverloading();
+		//ConstruOverloading t2=new ConstruOverloading(10);
+		//ConstruOverloading t3=new ConstruOverloading();
 	}
 	
 
