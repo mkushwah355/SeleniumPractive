@@ -1,7 +1,7 @@
 package Set;
 import java.util.*;
 
-public class TreeSetEx2_StringBuffer {
+public class TreeSet_StringBufferEx2 {
 	
 	public static void main (String []arg) {
 		

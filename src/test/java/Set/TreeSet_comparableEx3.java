@@ -1,6 +1,6 @@
 package Set;
 
-public class TreeSetEx3_comparable {
+public class TreeSet_comparableEx3 {
 	
 	public static void main (String []arg) {
 		
