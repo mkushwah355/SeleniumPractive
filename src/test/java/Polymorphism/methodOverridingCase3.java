@@ -1,13 +1,15 @@
 package Polymorphism;
 
-class methodOverridingCase3 {
+//Case 3: Invoking override method from sub-class
+
+class GHI {
 
 	void show()
 	{
 		System.out.println("print 1");
 		}
 }
-class STU extends methodOverridingCase2{
+class methodOverridingCase3 extends GHI{
 	
 	void show()
 	{
@@ -15,7 +17,7 @@ class STU extends methodOverridingCase2{
 		System.out.println("print 2");
 	}
 	public static void main (String []arg) throws Exception {
-		STU a=new STU();
+		GHI a=new GHI();
 		a.show();
 	
 		

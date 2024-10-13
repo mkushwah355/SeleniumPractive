@@ -7,13 +7,13 @@ public class autoORtypePromotionEx3 {
 	
 	static void Method(float a, double b) {
 
-		System.out.println("Method2 called=  " + (a+b));
+		System.out.println("Method1 called=  " + (a+b));
 
 	}
 
 	static void Method(double a, float b) {
 
-		System.out.println("Method3 called=  " + (a+b));
+		System.out.println("Method2 called=  " + (a+b));
 
 	}
 	public static void main (String []arg){
