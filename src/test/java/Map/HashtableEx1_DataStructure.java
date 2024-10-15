@@ -1,17 +1,20 @@
 package Map;
 import java.util.*;
-import java.util.Collections;
+
+//Hashtable works from "Top to bottom" and "Right to left" and its indexing starts from zero.
+
 class HashtableEx1_DataStructure {
+	
 	public static void main (String []arg) {
-		Hashtable h = new Hashtable (25);
-		h.put(new HashtableEx1(5), "A");
-		h.put(new HashtableEx1(2), "B");
-		h.put(new HashtableEx1(6), "C");
-		h.put(new HashtableEx1(15), "D");
-		h.put(new HashtableEx1(23), "E");
-		h.put(new HashtableEx1(16), "F");
+		Hashtable h = new Hashtable ();
+		h.put(new HashtableEx1(5), "A");   //5%11= 5(index of bucket in hashtable)
+		h.put(new HashtableEx1(2), "B");   //2%11= 2
+		h.put(new HashtableEx1(6), "C");   //6%11= 6
+		h.put(new HashtableEx1(15), "D");  //15%11= 4
+		h.put(new HashtableEx1(23), "E");  //23%11= 1
+		h.put(new HashtableEx1(16), "F");  //16%11= 5
 		//h.put("durga", null); //NPE
-		System.out.println(h);
+		System.out.println(h); //{23=E, 5=A, 15=D, 16=F, 2=B, 6=C}
 	}
 }
 

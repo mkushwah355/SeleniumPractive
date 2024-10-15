@@ -1,7 +1,4 @@
-
 package faltuCode;
 
-class practice{
-	
-	
-}
+
+

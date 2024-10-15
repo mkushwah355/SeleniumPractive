@@ -8,7 +8,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 
-public class InterviewQuestions {
+public class InterviewQuestions_Vivek {
 
 
 public static boolean test(int num) {
@@ -465,7 +465,7 @@ public static void main(String[] args) {
 // InterviewQuestions.charCount("aabbbbccd");
 // InterviewQuestions.duplicateChar("vivek verma");
  //InterviewQuestions.reverseString("Vivek Verma");
- InterviewQuestions.reverseScentence("Hello Java! This is a test");
+ InterviewQuestions_Vivek.reverseScentence("Hello Java! This is a test");
  //InterviewQuestions.reverseEachword("Vivek Verma");
 // InterviewQuestions.findDuplicates();
 // InterviewQuestions.removeDuplicatesFromArray();
