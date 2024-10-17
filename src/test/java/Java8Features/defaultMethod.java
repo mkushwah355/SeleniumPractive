@@ -21,6 +21,7 @@ class defaultMethod implements Left,Right{
 	public void m1() {
 		//System.out.println("Own implementation"); 
 		Left.super.m1();
+		Right.super.m1();
 	}
 	public static void main (String[]arg) {
 		defaultMethod s1= new defaultMethod();
