@@ -25,7 +25,7 @@ public class List_uniqueElements {
 		result.addAll(unCommon1);
 		result.addAll(unCommon2);
 		
-		
+//print all unique elements after comparing two list		
 		Collections.sort(result);
 		System.out.println(result);		
 	}
