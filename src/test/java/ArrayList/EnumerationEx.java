@@ -6,11 +6,12 @@ import org.checkerframework.checker.units.qual.C;
 public class EnumerationEx {
 	
 	public static void main (String []arg) {
-	Vector v= new Vector();
-	for (int i=0; i<=10; i++) {
-		v.addElement(i);
-	}
-	System.out.println(v);//[0,1,2,3,4....,10]
+		Vector v= new Vector();
+		for (int i=0; i<=10; i++) {
+			v.addElement(i);
+		}
+		System.out.println(v);//[0,1,2,3,4....,10]
+				
 	 Enumeration e= v.elements();
 	 while (e.hasMoreElements()) {
 		 Integer I = (Integer)e.nextElement();

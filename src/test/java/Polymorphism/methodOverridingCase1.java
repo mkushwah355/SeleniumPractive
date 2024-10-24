@@ -1,6 +1,8 @@
 package Polymorphism;
 
-class methodOverridingCase1 {
+//Case 1: Overriding and Access modifier
+
+class ABC {
 		
 	protected void show (){
 		
@@ -8,14 +10,14 @@ class methodOverridingCase1 {
 	}	
 }
 
-class DEF extends methodOverridingCase1{
+class methodOverridingCase1 extends ABC{
 	//child class method access modifier should be bigger than parent class method access modifier
-	//Public>protected>Default>Private (bigger to smaller in terms of accessibility)
+	//Public>protected>Default (bigger to smaller in terms of accessibility)
 	public void show(){
 		System.out.println("print 2");
 	}
 	public static void main (String []arg){
-			XYZ a=new XYZ();
+			ABC a=new ABC();
 			a.show();
 			methodOverridingCase1 b=new methodOverridingCase1();
 			b.show();
