@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression TestSuite">
+	<test name="Application test">
+		<classes>
+			<class name="Testng_testclasses.Testng_BeforeClass_MethodAnnotation_1"></class>
+			<class name="Testng_testclasses.Testng_BeforeClass_MethodAnnotation_2"></class>
+		</classes>
+	</test>
+</suite>
