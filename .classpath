@@ -138,5 +138,6 @@
 	<classpathentry kind="lib" path="E:/Automation/selenium-java-4.18.1/Apache POI_Excel/poi-bin-5.2.3-20220909/poi-bin-5.2.3/poi-ooxml-lite-5.2.3.jar"/>
 	<classpathentry kind="lib" path="E:/Automation/selenium-java-4.18.1/Apache POI_Excel/poi-bin-5.2.3-20220909/poi-bin-5.2.3/poi-scratchpad-5.2.3.jar"/>
 	<classpathentry kind="lib" path="E:/Automation/selenium-java-4.18.1/Apache POI_Excel/poi-bin-5.2.3-20220909/poi-bin-5.2.3/lib/log4j-api-2.18.0.jar"/>
+	<classpathentry kind="lib" path="E:/Automation/selenium-java-4.18.1/Extent report- jar/extentreports-2.40.2.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

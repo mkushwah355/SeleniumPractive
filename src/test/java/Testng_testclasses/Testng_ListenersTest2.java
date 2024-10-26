@@ -1,14 +1,14 @@
 package Testng_testclasses;
 
 import org.testng.annotations.Test;
-import Testng_Listeners.CustomListener1;
+import Testng_Listeners.CustomListener2;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
-//@Listeners(CustomListener1.class)
-public class Testng_ListenersTest1 {
+//@Listeners(CustomListener2.class)
+public class Testng_ListenersTest2 {
 	@BeforeClass
 	public void beforeClass() {
 		System.out.println("Code in before class");
