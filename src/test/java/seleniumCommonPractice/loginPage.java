@@ -1,4 +1,5 @@
 package seleniumCommonPractice;
+import java.time.Duration;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -18,7 +19,7 @@ public class loginPage {
 		driver.manage().window().maximize();
 		/*Dimension b= new Dimension(300,1020);          
 		driver.manage().window().setSize(b);*/
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 		driver.get(baseUrl);
 		WebElement loginLink = driver.findElement(By.xpath("//a[normalize-space()='Sign In']"));

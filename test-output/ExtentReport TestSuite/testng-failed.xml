@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ExtentReport TestSuite]">
+  <test name="Chrome Test(failed)">
+    <classes>
+      <class name="ExtentReport.Test1">
+        <methods>
+          <include name="test1_validLoginTest"/>
+          <include name="beforeClass"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- ExtentReport.Test1 -->
+    </classes>
+  </test> <!-- Chrome Test(failed) -->
+</suite> <!-- Failed suite [ExtentReport TestSuite] -->

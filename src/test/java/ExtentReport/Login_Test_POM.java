@@ -1,4 +1,4 @@
-package faltuCode;
+package ExtentReport;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import java.io.IOException;
@@ -13,22 +13,23 @@ import org.testng.annotations.AfterMethod;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
-import ExtentReport.Screenshots1;
 
- class practice extends Screenshots1 {
+ class Login_Test_POM {
 	
 	WebDriver driver;
 	String baseUrl;
 	ExtentReports report;
 	ExtentTest test;
+	HomePage_Page_POM hp;
 	
 	
 	@BeforeClass
 	public void beforeClass() {
 		baseUrl = "http://www.letskodeit.com/";
-		report = new ExtentReports("C:\\git projects\\SeleniumPractive\\ExtentReport\\SeleniumLoginTest.html");
+		report = ExtentReport_Instance.getInstance();
 		test = report.startTest("Verify Welcome Text");
 		driver = new ChromeDriver();
+		hp= new HomePage_Page_POM(driver,test);
 		test.log(LogStatus.INFO, "Browser Started...");
 
 //Browser started
@@ -44,28 +45,33 @@ import ExtentReport.Screenshots1;
 	@Test
 	public void test1_validLoginTest() throws InterruptedException {
 //Clicked on signup link		
-		WebElement signUpLink = driver.findElement(By.xpath("//a[normalize-space()='Sign In']"));
-		signUpLink.click();
-		test.log(LogStatus.INFO, "Clicked on signup link");
+/*WebElement signUpLink = driver.findElement(By.xpath("//a[normalize-space()='Sign In']"));
+signUpLink.click();
+test.log(LogStatus.INFO, "Clicked on signup link");*/
+		hp.clickSignupLink();
 //Failing the test case with wrong email id			
-		WebElement emailField = driver.findElement(By.xpath("//form[@name='loginform']//input[@id='email']"));
-		emailField.sendKeys("test1@email.com");
-		test.log(LogStatus.INFO, "Enter email");
-
-		WebElement passwordField = driver.findElement(By.xpath("//input[@id='login-password']"));
-		passwordField.sendKeys("abcabc");
-		test.log(LogStatus.INFO, "Enter password");
+/*WebElement emailField = driver.findElement(By.xpath("//form[@name='loginform']//input[@id='email']"));
+emailField.sendKeys("test1@email.com");
+test.log(LogStatus.INFO, "Enter email");*/
+		hp.clickEmailField("test@email.com");
+//Enter password
+/*WebElement passwordField = driver.findElement(By.xpath("//input[@id='login-password']"));
+passwordField.sendKeys("abcabc");
+test.log(LogStatus.INFO, "Enter password");*/
+		hp.clickPassField("abcabc");
+//Clicked loginButton		
+/*WebElement loginButton = driver.findElement(By.xpath("//button[@id='login']"));
+loginButton.click();
+test.log(LogStatus.INFO, "Clicked loginButton");*/
+		hp.clickLoginButton();
 		
-		WebElement loginButton = driver.findElement(By.xpath("//button[@id='login']"));
-		loginButton.click();
-		test.log(LogStatus.INFO, "Clicked Go button");
-		
-	
-		
-		WebElement welcomeText= driver.findElement(By.xpath("//h1[@class='dynamic-heading']"));
-		Assert.assertTrue(welcomeText !=null);
+//Verify Welcome Text		
+/*WebElement welcomeText= driver.findElement(By.xpath("//h1[@class='dynamic-heading']"));
+Assert.assertTrue(welcomeText !=null);
+test.log(LogStatus.PASS, "Verify Welcome Text");*/
+		boolean result= hp.isWelcomeTextPresent();
+		Assert.assertTrue(result);
 		test.log(LogStatus.PASS, "Verify Welcome Text");
-		
 	}
 
 	@AfterMethod

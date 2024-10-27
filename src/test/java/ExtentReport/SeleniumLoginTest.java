@@ -1,4 +1,4 @@
-package faltuCode;
+package ExtentReport;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import java.io.IOException;
@@ -13,9 +13,8 @@ import org.testng.annotations.AfterMethod;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
-import ExtentReport.Screenshots1;
 
- class practice extends Screenshots1 {
+ class SeleniumLoginTest {
 	
 	WebDriver driver;
 	String baseUrl;
@@ -28,10 +27,11 @@ import ExtentReport.Screenshots1;
 		baseUrl = "http://www.letskodeit.com/";
 		report = new ExtentReports("C:\\git projects\\SeleniumPractive\\ExtentReport\\SeleniumLoginTest.html");
 		test = report.startTest("Verify Welcome Text");
+		
+//Browser started		
 		driver = new ChromeDriver();
 		test.log(LogStatus.INFO, "Browser Started...");
 
-//Browser started
 		driver.manage().window().maximize();
 		test.log(LogStatus.INFO, "Browser Maximized");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -51,16 +51,16 @@ import ExtentReport.Screenshots1;
 		WebElement emailField = driver.findElement(By.xpath("//form[@name='loginform']//input[@id='email']"));
 		emailField.sendKeys("test1@email.com");
 		test.log(LogStatus.INFO, "Enter email");
-
+//Enter password
 		WebElement passwordField = driver.findElement(By.xpath("//input[@id='login-password']"));
 		passwordField.sendKeys("abcabc");
 		test.log(LogStatus.INFO, "Enter password");
-		
+//Clicked loginButton		
 		WebElement loginButton = driver.findElement(By.xpath("//button[@id='login']"));
 		loginButton.click();
-		test.log(LogStatus.INFO, "Clicked Go button");
+		test.log(LogStatus.INFO, "Clicked loginButton");
 		
-	
+//Verify Welcome Text	
 		
 		WebElement welcomeText= driver.findElement(By.xpath("//h1[@class='dynamic-heading']"));
 		Assert.assertTrue(welcomeText !=null);
