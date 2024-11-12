@@ -1,4 +1,4 @@
-package seleniumConcepts;
+package seleniumJavaConcepts;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

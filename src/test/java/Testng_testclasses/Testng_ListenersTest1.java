@@ -7,7 +7,7 @@ import org.testng.annotations.Listeners;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
-@Listeners(CustomListener1.class)
+//@Listeners(CustomListener1.class)
 public class Testng_ListenersTest1 {
 	@BeforeClass
 	public void beforeClass() {

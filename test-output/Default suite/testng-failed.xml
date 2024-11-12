@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="Testng_testclasses.Testng_ITestResultDemo">
+      <class name="seleniumConcepts.Wait_ImplicitlyWait">
         <methods>
-          <include name="afterMethod"/>
-          <include name="testMethod1"/>
+          <include name="testMethod"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- Testng_testclasses.Testng_ITestResultDemo -->
+      </class> <!-- seleniumConcepts.Wait_ImplicitlyWait -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

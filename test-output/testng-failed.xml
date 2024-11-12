@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Listeners TestSuite]" guice-stage="DEVELOPMENT">
-  <test name="Application test(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test name="Default test(failed)">
     <classes>
-      <class name="Testng_testclasses.Testng_ListenersTest1">
+      <class name="seleniumConcepts.Wait_ImplicitlyWait">
         <methods>
-          <include name="testMethod2"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
+          <include name="testMethod"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- Testng_testclasses.Testng_ListenersTest1 -->
+      </class> <!-- seleniumConcepts.Wait_ImplicitlyWait -->
     </classes>
-  </test> <!-- Application test(failed) -->
-</suite> <!-- Failed suite [Listeners TestSuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

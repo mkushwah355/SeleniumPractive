@@ -1,4 +1,4 @@
-package seleniumConcepts;
+package seleniumJavaConcepts;
 
 import java.io.File;
 import java.io.IOException;
@@ -21,7 +21,7 @@ import com.google.common.io.Files;
 public class takeScreenshot {
 
 	public static void main(String[] args) throws IOException {
-		System.setProperty("webdriver.chrome.driver","E:\\Automation\\selenium-java-4.18.1\\ChromeDriver 128\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver","E:\\Automation\\selenium-java-4.18.1\\ChromeDriver 128\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 			driver.get("https://www.amazon.in/");
 			driver.manage().window().maximize();
