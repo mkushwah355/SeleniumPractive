@@ -1,4 +1,4 @@
-package seleniumConcepts;
+package seleniumJavaConcepts;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -2,31 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-27T17:50:30Z" name="Default suite" finished-at="2024-10-27T17:50:42Z" duration-ms="12565">
+  <suite started-at="2024-11-10T18:36:20Z" name="Default suite" finished-at="2024-11-10T18:36:35Z" duration-ms="15086">
     <groups>
     </groups>
-    <test started-at="2024-10-27T17:50:30Z" name="Default test" finished-at="2024-10-27T17:50:42Z" duration-ms="12565">
-      <class name="ExtentReport.Login_Test_POM">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:ExtentReport.Login_Test_POM@8ad6665]" started-at="2024-10-27T23:20:30Z" name="beforeClass" finished-at="2024-10-27T23:20:36Z" duration-ms="6106" status="PASS">
+    <test started-at="2024-11-10T18:36:20Z" name="Default test" finished-at="2024-11-10T18:36:35Z" duration-ms="15086">
+      <class name="seleniumConcepts.Wait_ImplicitlyWait">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:seleniumConcepts.Wait_ImplicitlyWait@388526fb]" started-at="2024-11-11T00:06:20Z" name="setUp" finished-at="2024-11-11T00:06:25Z" duration-ms="5116" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="test1_validLoginTest()[pri:0, instance:ExtentReport.Login_Test_POM@8ad6665]" started-at="2024-10-27T23:20:36Z" name="test1_validLoginTest" finished-at="2024-10-27T23:20:42Z" duration-ms="5787" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="testMethod()[pri:0, instance:seleniumConcepts.Wait_ImplicitlyWait@388526fb]" started-at="2024-11-11T00:06:25Z" name="testMethod" finished-at="2024-11-11T00:06:33Z" duration-ms="7658" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1_validLoginTest -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:ExtentReport.Login_Test_POM@8ad6665]" started-at="2024-10-27T23:20:42Z" name="afterMethod" finished-at="2024-10-27T23:20:42Z" duration-ms="651" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=test1_validLoginTest status=SUCCESS method=Login_Test_POM.test1_validLoginTest()[pri:0, instance:ExtentReport.Login_Test_POM@8ad6665] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- testMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:seleniumConcepts.Wait_ImplicitlyWait@388526fb]" started-at="2024-11-11T00:06:33Z" name="tearDown" finished-at="2024-11-11T00:06:35Z" duration-ms="2291" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- ExtentReport.Login_Test_POM -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- seleniumConcepts.Wait_ImplicitlyWait -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

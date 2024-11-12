@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class List_ListOfList {
-	
+
 	public static void main (String[]arg) {
 		
 //Create the innermost lists	
@@ -28,5 +28,14 @@ public class List_ListOfList {
 	listOfList.add(middleList1);
 	
 	System.out.println("List of List of List: "+listOfList);
+	
+//Iterate listOfList
+for (List<List<Integer>> outerList : listOfList){
+	for (List<Integer> middleList : outerList){
+		for (Integer value : middleList){ 
+			System.out.println("Value: " + value);}
+		}
+}
+	
 
 }}
