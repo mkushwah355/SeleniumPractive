@@ -14,7 +14,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 
-public class WorkingWithElementsList {
+public class FindElements_List_RadioButtons {
 	WebDriver driver;
 	String baseUrl = "https://www.letskodeit.com/practice";
 		

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="seleniumConcepts.Wait_ImplicitlyWait">
+      <class name="seleniumConcepts.CalendarSelection_AutoComplete_AutoSuggestion_InputField">
         <methods>
-          <include name="testMethod"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="test"/>
         </methods>
-      </class> <!-- seleniumConcepts.Wait_ImplicitlyWait -->
+      </class> <!-- seleniumConcepts.CalendarSelection_AutoComplete_AutoSuggestion_InputField -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
