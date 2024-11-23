@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="seleniumConcepts.Keyboard_Enter_Tab">
+      <class name="seleniumConcepts.SwitchTo_Window_throughIterator">
         <methods>
+          <include name="test"/>
           <include name="afterMethod"/>
           <include name="beforeMethod"/>
-          <include name="test"/>
         </methods>
-      </class> <!-- seleniumConcepts.Keyboard_Enter_Tab -->
+      </class> <!-- seleniumConcepts.SwitchTo_Window_throughIterator -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
