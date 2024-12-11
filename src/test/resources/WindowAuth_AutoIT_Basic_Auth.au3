@@ -1,0 +1,5 @@
+WinWaitActive("Sign In")
+Send("admin")
+Send("{Tab}")
+Send("admin")
+Send("{Enter}")

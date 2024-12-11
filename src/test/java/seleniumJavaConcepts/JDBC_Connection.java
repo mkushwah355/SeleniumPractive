@@ -3,10 +3,9 @@ package seleniumJavaConcepts;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.sql.Statement;
-import java.sql.*;  
+import java.sql.Statement; 
+import java.sql.ResultSet;
 
-import com.mysql.jdbc.ResultSet;
 
 public class JDBC_Connection {
 
@@ -23,7 +22,7 @@ public class JDBC_Connection {
 		
 		//Step-3:Create statement to write a SQL query
 		Statement stmt=conn.createStatement();
-        java.sql.ResultSet rs=stmt.executeQuery("select* from Employee");
+       ResultSet rs=stmt.executeQuery("select* from Employee");
 		
 		while (rs.next())
 			System.out.println(rs.getInt(1)+" "+rs.getString(2)+" "+rs.getString(3));
