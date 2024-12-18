@@ -1,9 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="ExtentReport TestSuite">
-
-<test name="Chrome Test">
-	<classes>
-		<class name="ExtentReport.Test1"></class>
-		<class name="ExtentReport.Test2"></class>
-	</classes>
-</test>
+	<test name="Chrome Test">
+		<classes>
+			<class name="ExtentReport.Test1"></class>
+			<class name="ExtentReport.Test2"></class>
+		</classes>
+	</test>
 </suite>
