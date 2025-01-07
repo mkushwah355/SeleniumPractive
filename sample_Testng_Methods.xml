@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite1">
+	<test name="Test1">
+		<classes> <!-- Include specific classes -->
+			<class name="TestPackage.TestClass1" />
+			<class name="TestPackage.TestClass2" />
+		</classes>
+	</test>
+	<test name="Test2">
+		<classes>
+			<class name="TestPackage.TestClass3">
+				<methods> <!-- Include specific methods -->
+					<include name="testMethod1" /> <!-- Exclude specific methods -->
+					<exclude name="testMethod2" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
+		

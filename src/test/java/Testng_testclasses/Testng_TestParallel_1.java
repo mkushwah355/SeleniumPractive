@@ -6,18 +6,18 @@ public class Testng_TestParallel_1 {
 	@Test
 	public void testMethod1() throws InterruptedException {
 
-		System.out.println("Testng_TestParallel_1-> testMethod1");
+		System.out.println("Testng_TestParallel_Class1-> testMethod1");
 		Thread.sleep(6000);
-		System.out.println("Testng_TestParallel_1-> testMethod1-> MoreSteps");
+		System.out.println("Testng_TestParallel_Class1-> testMethod1-> MoreSteps");
 
 	}
 	
 	@Test
 	public void testMethod2() throws InterruptedException {
 
-		System.out.println("Testng_TestParallel_1-> testMethod2");
+		System.out.println("Testng_TestParallel_Class1-> testMethod2");
 		Thread.sleep(6000);
-		System.out.println("Testng_TestParallel_1-> testMethod2-> MoreSteps");
+		System.out.println("Testng_TestParallel_Class1> testMethod2-> MoreSteps");
 
 	}
 }

@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="Testng_testclasses.Testng_Asserts">
+      <class name="Testng_testclasses.Testng_ITestResultDemo">
         <methods>
-          <include name="testSum"/>
+          <include name="afterMethod"/>
+          <include name="testMethod1"/>
         </methods>
-      </class> <!-- Testng_testclasses.Testng_Asserts -->
+      </class> <!-- Testng_testclasses.Testng_ITestResultDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

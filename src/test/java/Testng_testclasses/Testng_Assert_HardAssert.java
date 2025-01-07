@@ -1,22 +1,18 @@
 package Testng_testclasses;
-import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.Assert;
 import Testng_appCode.SomeClassToTest;
-import org.testng.asserts.SoftAssert;
+public class Testng_Assert_HardAssert {
 
-public class Testng_Asserts {
-		
 	@Test
 	public void testSum() {
 		System.out.println("testSum method called");
-		SoftAssert sa= new SoftAssert();
 		SomeClassToTest S1= new SomeClassToTest();
 		int result= S1.sumNumbers(1, 2);
-		sa.assertEquals(result,2);
-		System.out.println("line after assert 1");
-		sa.assertEquals(result,3);
+		Assert.assertEquals(result,2);
+		System.out.println("line after assert 1");//Hard(Assert) assert will stop execution here
+		Assert.assertEquals(result,3);
 		System.out.println("line after assert 2");
-		sa.assertAll();
 	}
 	
 	@Test

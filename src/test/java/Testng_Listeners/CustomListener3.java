@@ -18,7 +18,7 @@ public class CustomListener3 implements ISuiteListener {
 	@Override
 	public void onFinish(ISuite suite) {
 		// When <suite> tag completes
-		System.out.println("onFinish: before suite completes");
+		System.out.println("onFinish: after suite completes");
 
 	}
 
