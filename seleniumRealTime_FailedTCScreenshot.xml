@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FailedTestSuite">
+	<listeners>
+		<listener class-name="seleniumRealTime_FailedTCScreenshot.CustomeListeners_takeScreenhsotOfOnlyFailedTC"></listener>
+	</listeners>
+	<test name="ScreenshotTest1">
+		<classes>
+			<class name="seleniumRealTimeInterviewQues.FailedTestCaseClass1"></class>
+			<class name="seleniumRealTimeInterviewQues.FailedTestCaseClass2"></class>
+		</classes>
+	</test>
+</suite>

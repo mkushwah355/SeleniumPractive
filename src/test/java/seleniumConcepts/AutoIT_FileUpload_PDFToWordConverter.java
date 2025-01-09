@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-//Navigate to url and click on "Select PDF file" link and create AutoIT script to move focus to "File" input fled and then click on "open" button.
+//Navigate to url and click on "Select PDF file" link and create AutoIT script to move focus to "File" input field and then click on "open" button.
 
 public class AutoIT_FileUpload_PDFToWordConverter {
 

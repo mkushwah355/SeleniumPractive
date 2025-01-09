@@ -3,12 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="Testng_testclasses.Testng_ITestResultDemo">
+      <class name="seleniumRealTimeInterviewQues.FailedTestCaseScreenshot">
         <methods>
           <include name="afterMethod"/>
-          <include name="testMethod1"/>
+          <include name="test1"/>
+          <include name="test2"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- Testng_testclasses.Testng_ITestResultDemo -->
+      </class> <!-- seleniumRealTimeInterviewQues.FailedTestCaseScreenshot -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
