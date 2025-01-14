@@ -1,26 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [FailedTestSuite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="seleniumRealTimeInterviewQues.CustomeListeners"/>
-  </listeners>
-  <test name="ScreenshotTest1(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test name="Default test(failed)">
     <classes>
-      <class name="seleniumRealTimeInterviewQues.FailedTestCaseClass2">
+      <class name="faltuCode.practice">
         <methods>
-          <include name="beforeMethod"/>
-          <include name="test21"/>
+          <include name="test"/>
           <include name="afterMethod"/>
-        </methods>
-      </class> <!-- seleniumRealTimeInterviewQues.FailedTestCaseClass2 -->
-      <class name="seleniumRealTimeInterviewQues.FailedTestCaseClass1">
-        <methods>
-          <include name="test12"/>
           <include name="beforeMethod"/>
-          <include name="afterMethod"/>
-          <include name="test11"/>
         </methods>
-      </class> <!-- seleniumRealTimeInterviewQues.FailedTestCaseClass1 -->
+      </class> <!-- faltuCode.practice -->
     </classes>
-  </test> <!-- ScreenshotTest1(failed) -->
-</suite> <!-- Failed suite [FailedTestSuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

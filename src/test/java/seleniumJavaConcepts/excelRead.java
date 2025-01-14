@@ -25,22 +25,12 @@ public class excelRead {
 				
 				DataFormatter df= new DataFormatter();
 				//System.out.println(sheet.getRow(i).getCell(j).getStringCellValue());
-				System.out.println(df.formatCellValue(sheet.getRow(i).getCell(j)));
-				
-				
+				System.out.println(df.formatCellValue(sheet.getRow(i).getCell(j)));			
 			}
 		}
 		
 		workbook.close();
-		fis.close();
-		
-		
-		
-		
-		
-		
-		
-		
+		fis.close();		
 
 	}
 

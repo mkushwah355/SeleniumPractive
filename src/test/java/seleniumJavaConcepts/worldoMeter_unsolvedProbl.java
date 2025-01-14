@@ -1,4 +1,4 @@
-package seleniumCommonPractice;
+package seleniumJavaConcepts;
 import java.io.File;
 import java.io.IOException;
 import java.sql.Time;

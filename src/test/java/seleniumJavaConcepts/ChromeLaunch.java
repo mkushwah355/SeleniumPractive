@@ -1,4 +1,4 @@
-package seleniumCommonPractice;
+package seleniumJavaConcepts;
 
 import java.time.Duration;
 

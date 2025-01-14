@@ -1,4 +1,4 @@
-package seleniumCommonPractice;
+package seleniumJavaConcepts;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -29,9 +29,7 @@ public class WorldMeter {
 		
 		//*[@class='maincounter-number']
 		//*[@class='maincounter-number']//span[8]
-		//div[@id='maincounter-wrap']//span[@class='rts-counter']
-		
-		
+		//div[@id='maincounter-wrap']//span[@class='rts-counter']	
 		driver.close();
 	}
 

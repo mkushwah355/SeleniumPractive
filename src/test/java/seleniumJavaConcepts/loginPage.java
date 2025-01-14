@@ -1,4 +1,4 @@
-package seleniumCommonPractice;
+package seleniumJavaConcepts;
 import java.time.Duration;
 import java.util.List;
 import java.util.concurrent.TimeUnit;

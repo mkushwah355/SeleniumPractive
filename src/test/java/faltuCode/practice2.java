@@ -1,44 +1,34 @@
 package faltuCode;
-import java.time.Duration;
-import java.util.List;
-import java.util.Set;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
 
-//Clicking on "Switch Window Example" button and typing "python" on new window text field and closing the window.
-//And switching back to parent window.
-public class practice2 {
+import java.io.*;
+ class practice2 implements Serializable {
+    private static final long serialVersionUID = 1L;
+    private int id;
+    private String name;
+    
+    practice2(int id, String name){
+    	this.id=id;
+    	this.name=name;
+    }
+    
+// Constructor, getters, and setters
 
-	WebDriver driver;
-	String baseUrl = "https://rahulshettyacademy.com/AutomationPractice/";
+    public static void main(String[] args) {
 
-	@BeforeMethod
-	public void beforeMethod() {
-		driver = new ChromeDriver();
-		driver.get(baseUrl);
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
-	}
+// Serialization
+        try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("practice2.ser"))) {
+            practice2 practice = new practice2(1, "Test");
+            out.writeObject(practice);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
-	@Test
-	public void test() throws InterruptedException {
-			
-		String title=driver.getTitle();
-		System.out.println(title);
-		
-	}
-
-	@AfterMethod
-	public void afterMethod() {
-		driver.quit();
-		
-	}
-
+// De-serialization
+        try (ObjectInputStream in = new ObjectInputStream(new FileInputStream("practice2.ser"))) {
+            practice2 practice2 = (practice2) in.readObject();
+            System.out.println(practice2.getClass());
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
 }
