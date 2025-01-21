@@ -1,7 +1,7 @@
 package JavaProgramPractice;
 
 //Aim: To reverse a given sentence.
-public class reverseSentance {
+public class String_reverseSentance {
 
 	public static void main(String[] args) {
 		String s1= "My name is Mayank";

@@ -2,7 +2,7 @@ package JavaProgramPractice;
 import java.util.Scanner;
 
 //Aim1: To print reverse of each word in given sentence
- class reverseEachword {
+ class String_reverseEachword {
 
 	public static void main(String[] args) {
 

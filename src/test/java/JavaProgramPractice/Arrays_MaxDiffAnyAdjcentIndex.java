@@ -2,7 +2,7 @@ package JavaProgramPractice;
 
 //Aim: Print maximum number difference b/w any adjacent index in array
 
-public class MaxDiffAnyAdjcentIndex {	
+public class Arrays_MaxDiffAnyAdjcentIndex {	
 	
 	public static void main(String[] args) {
 		
@@ -17,16 +17,6 @@ public class MaxDiffAnyAdjcentIndex {
 				diff=a[i+1]-a[i];				
 			}			
 		}
-		System.out.println(diff); //output=7
-		
-		
-		
-		
+		System.out.println(diff); //output=7	
 	}
-	
-	
-	
-	
-	
-	
-	}
+}

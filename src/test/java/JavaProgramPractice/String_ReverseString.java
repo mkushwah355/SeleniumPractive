@@ -3,7 +3,7 @@ package JavaProgramPractice;
 import java.util.Scanner;
 
 //Aim1: Reverse a string with for loop
-class ReverseString {
+class String_ReverseString {
 
 	public static void main(String[] args) {
 
@@ -16,6 +16,12 @@ class ReverseString {
 		}
 		System.out.println("Original String:" + s1);
 		System.out.println("Reverse String:" + s2);
+//Check whether string is palindrome or not		
+		if(s1==s2) {
+			System.out.println("String is palindrom");
+		}else {
+			System.out.println("String is NOT palindrom");
+		}
 	}
 }
 

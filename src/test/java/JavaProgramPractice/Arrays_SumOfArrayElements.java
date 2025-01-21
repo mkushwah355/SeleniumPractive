@@ -2,7 +2,7 @@ package JavaProgramPractice;
 
 //Aim: Create method which accepts Array and returns sum of all the elements in array.
 
-public class SumOfArrayElements {
+public class Arrays_SumOfArrayElements {
 	
 	public static void main(String[] args) {
 		int[] a = { 1, 2, 3, 4, 5 };
