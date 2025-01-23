@@ -1,6 +1,6 @@
 package JavaProgramPractice;
 
-//Count number of occurrence with created method
+//Count number of occurrence after creating method
 class String_CountNoOfOccurancesMethod{
 	
 	public static void main (String []arg) {
@@ -18,7 +18,7 @@ class String_CountNoOfOccurancesMethod{
 		return count;
 	}
 }
-//Count number of occurrence without created method
+//Count number of occurrence without creating method
 class String_CountNoOfOccurances {
 	public static void main (String []arg) {
 		
