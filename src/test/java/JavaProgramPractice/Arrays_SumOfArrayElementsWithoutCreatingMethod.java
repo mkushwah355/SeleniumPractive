@@ -1,8 +1,7 @@
 package JavaProgramPractice;
 
-//Aim: Create method which accepts Array and returns sum of all the elements in array.
-
-public class Arrays_SumOfArrayElements {
+//Aim: Create method which accepts Array and returns sum of all the elements of array.
+class Arrays_SumOfArrayElementsAfterCreatingMethod {
 	
 	public static void main(String[] args) {
 		int[] a = { 1, 2, 3, 4, 5 };
@@ -22,8 +21,8 @@ public class Arrays_SumOfArrayElements {
 
 	
 }
-//Aim: Return sum of all the elements in array.
-/*public class SumOfArrayElements {	
+//Aim: Return sum of all the elements in array without creating method.
+ class Arrays_SumOfArrayElementsWithoutCreatingMethod {	
 	
 	public static void main(String[] args) {
 		int[] a= {1,2,3,4,5}; 
@@ -34,7 +33,6 @@ public class Arrays_SumOfArrayElements {
 			{			
 			sum=sum+ a[i];			
 			}
-		System.out.println("Array elements="+sum);
+		System.out.println("Sum of Array elements: "+sum);
 		}
 	}
-*/

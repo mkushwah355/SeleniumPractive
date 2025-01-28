@@ -1,5 +1,4 @@
 package JavaProgramPractice;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
@@ -8,25 +7,25 @@ import java.util.Set;
 public class String_PrintDuplicateCharacterAndCountOfEachChar {
 	public static void main(String[] args) {
 
-		String s1 = "programming";
-		char[] s2 = s1.toCharArray(); //java
+		String str = "programming";
+		char[] CharStr = str.toCharArray(); //java
 
-		Map<Character, Integer> s3 = new HashMap<Character, Integer>();
+		Map<Character, Integer> hm = new HashMap<Character, Integer>();
 
-		for (Character s4 : s2) {
+		for (Character loop1 : CharStr) {
 
-			if (s3.containsKey(s4)) {
-				s3.put(s4, s3.get(s4) + 1);
+			if (hm.containsKey(loop1)) {
+				hm.put(loop1, hm.get(loop1) + 1);
 			} else {
-				s3.put(s4, 1);
+				hm.put(loop1, 1);
 			}
 		}
 
-		Set<Map.Entry<Character, Integer>> entrySet = s3.entrySet();
+		Set<Map.Entry<Character, Integer>> entrySet = hm.entrySet();
 
-		for (Map.Entry<Character, Integer> s5 : entrySet) {
-			if (s5.getValue()>1) {
-				System.out.println(s5.getKey() + ":" + s5.getValue());
+		for (Map.Entry<Character, Integer> loop2 : entrySet) {
+			if (loop2.getValue()>1) {
+				System.out.println(loop2.getKey() + ":" + loop2.getValue());
 			}
 
 		}
