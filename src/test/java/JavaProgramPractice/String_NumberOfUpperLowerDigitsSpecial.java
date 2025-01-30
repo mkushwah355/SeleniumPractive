@@ -1,9 +1,9 @@
-package faltuCode;
+package JavaProgramPractice;
 
 //Find number of uppercase, lowercase, digits and special characters in a given string
 
 //Through built in methods
- class practice {
+class String_NumberOfUpperLowerDigitsSpecialMethods {
 
 	public static void main(String[] args) {
 		
@@ -32,7 +32,7 @@ package faltuCode;
 }}
 
 //Through range of characters
- class practice3 {
+class String_NumberOfUpperLowerDigitsSpecial {
 
 	public static void main(String[] args) {
 		
