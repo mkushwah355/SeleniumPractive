@@ -9,7 +9,7 @@ public class Arrays_Martrix3By3_MaximumValue {
 
 	public static void main(String[] arg) {
 
-		int[][] a = { { 2, 4, 5 }, { 3, 1, 7 }, { 1, 2, 9 } };
+		int[][] a = { { 2, 4, 5 }, { 3, 1, 7 }, { 1, 2, 9 } }; //output=9
 		int max = a[0][0];
 
 		for (int i = 0; i < 3; i++) {

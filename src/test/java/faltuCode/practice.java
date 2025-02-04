@@ -1,62 +1,38 @@
 package faltuCode;
 
-//Find number of uppercase, lowercase, digits and special characters in a given string
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
-//Through built in methods
- class practice {
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
-	public static void main(String[] args) {
+import java.sql.Connection;
+
+class practice {
+
+	public static void main(String[] arg) throws SQLException {
 		
-		String s1 = "Find123 @The$% Count() Of Upper, Lower & Special# Chars!";
-		String str=s1.replaceAll("\\s", "");
-	
-		int uppercase=0, lowercase=0, digits=0, specialChar=0;
 		
-		for(int i=0;i<str.length();i++) {
-			char s2= str.charAt(i);
+		
+		 Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/qa_db","root","root");
+		 
+		 Statement stm= con.createStatement();
+		 ResultSet rs= stm.executeQuery("SELECT * FROM qa_db.credentials where scenario='letscodeit'");
+		 
+		while(rs.next()) {
 			
-			if(Character.isUpperCase(s2)) {
-				uppercase++;
-			}else if(Character.isLowerCase(s2)) {
-				lowercase++;
-			}else if(Character.isDigit(s2)) {
-				digits++;
-			}else {
-				specialChar++;
-			}	
+			WebDriver driver= new ChromeDriver();
+			driver.get("https://www.letskodeit.com/login");
+			driver.findElement(By.xpath("//form[@name='loginform']//input[@id='email']")).sendKeys(rs.getString("username"));
+			driver.findElement(By.xpath("//input[@id='login-password']")).sendKeys(rs.getString("password"));
+			driver.findElement(By.xpath("//button[@id='login']")).click();
+			//System.out.println(rs.getString("username"));
+			//System.out.println(rs.getString("password"));
 		}
-		System.out.println("No. of uppercase: "+uppercase);
-		System.out.println("No. of lowercase: "+lowercase);
-		System.out.println("No. of digits: "+digits);
-		System.out.println("No. of specialChar: "+specialChar);		
-}}
-
-//Through range of characters
- class practice3 {
-
-	public static void main(String[] args) {
-		
-		String s1 = "Find123 @The$% Count() Of Upper, Lower & Special# Chars!";
-		String str=s1.replaceAll("\\s", "");
+		 
 	
-		int uppercase=0, lowercase=0, digits=0, specialChar=0;
-		
-		for(int i=0;i<str.length();i++) {
-			char s2= str.charAt(i);
-			
-			if(s2>='A' && s2<='Z') {
-				uppercase++;
-			}else if(s2>='a' && s2<='z') {
-				lowercase++;
-			}else if(s2>='1' && s2<='9') {
-				digits++;
-			}else {
-				specialChar++;
-			}	
-		}
-		System.out.println("No. of uppercase: "+uppercase);
-		System.out.println("No. of lowercase: "+lowercase);
-		System.out.println("No. of digits: "+digits);
-		System.out.println("No. of specialChar: "+specialChar);		
-}}
-
+	}
+}

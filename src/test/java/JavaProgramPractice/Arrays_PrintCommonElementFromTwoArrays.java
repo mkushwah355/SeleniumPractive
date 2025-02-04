@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 //Aim: Compare each element of 2 different arrays and create new array for matching values.
-public class Arrays_CompareEachElementOf2DifferentArrays {
+public class Arrays_PrintCommonElementFromTwoArrays {
 
 	public static void main(String[] arg) {
 		int[] a = { 1, 3, 5, 7, 9 };
