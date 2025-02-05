@@ -1,4 +1,4 @@
-package seleniumJavaConcepts;
+package selenium_Read_JDBC_ExternalFiles;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -9,7 +9,7 @@ import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class excelRead_2DArray {
+ class excelRead_2DArray {
 
 	public static void main(String[] args) throws Exception {
 
@@ -21,20 +21,18 @@ public class excelRead_2DArray {
 		int noOfRow = sheet.getPhysicalNumberOfRows();
 		int noOfCol = sheet.getRow(0).getLastCellNum();
 
-		String[][] data = new String[noOfRow][noOfCol];
-		for (int i = 0; i < noOfRow; i++) {
+		String[][] data = new String[noOfRow-1][noOfCol];
+		for (int i = 1; i < noOfRow; i++) {
 			for (int j = 0; j < noOfCol; j++) {
 
 				DataFormatter df = new DataFormatter();
-				data[i][j] = df.formatCellValue(sheet.getRow(i).getCell(j));
-
+				data[i-1][j] = df.formatCellValue(sheet.getRow(i).getCell(j));
 			}
-			workbook.close();
-			fis.close();
-			for (String[] datarr : data) {
-				System.out.println(Arrays.toString(datarr));
-			}
-
+		}
+		workbook.close();
+		fis.close();
+		for (String[] datarr : data) {
+			System.out.println(Arrays.toString(datarr));
 		}
 
 		

@@ -1,4 +1,4 @@
-package faltuCode;
+package selenium_Read_JDBC_ExternalFiles;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -10,7 +10,7 @@ import org.apache.poi.ss.util.NumberToTextConverter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class practice {
+public class excelRead_GenericMethod {
 
 	//Identify Testcases coloum by scanning the entire 1st row
 	//once coloumn is identified then scan entire testcase coloum to identify purcjhase testcase row

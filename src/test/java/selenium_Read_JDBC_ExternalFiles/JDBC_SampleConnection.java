@@ -1,4 +1,4 @@
-package seleniumJavaConcepts;
+package selenium_Read_JDBC_ExternalFiles;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -7,7 +7,7 @@ import java.sql.Statement;
 import java.sql.ResultSet;
 
 
-public class JDBC_Connection {
+public class JDBC_SampleConnection {
 
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
 		

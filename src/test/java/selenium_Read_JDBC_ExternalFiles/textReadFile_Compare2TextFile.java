@@ -44,7 +44,7 @@ public class textReadFile_Compare2TextFile {
 
 }
 */
-package seleniumJavaConcepts;
+package selenium_Read_JDBC_ExternalFiles;
 
 
 

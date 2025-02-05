@@ -1,4 +1,4 @@
-package seleniumJavaConcepts;
+package selenium_Read_JDBC_ExternalFiles;
 
 import java.io.File;
 import java.io.FileReader;

@@ -6,8 +6,6 @@
       <class name="faltuCode.practice">
         <methods>
           <include name="test"/>
-          <include name="afterMethod"/>
-          <include name="beforeMethod"/>
         </methods>
       </class> <!-- faltuCode.practice -->
     </classes>
