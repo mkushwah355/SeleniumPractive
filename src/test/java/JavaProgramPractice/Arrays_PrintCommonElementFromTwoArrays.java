@@ -1,10 +1,10 @@
 package JavaProgramPractice;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 
 //Aim: Compare each element of 2 different arrays and create new array for matching values.
-public class Arrays_PrintCommonElementFromTwoArrays {
+//Without creating method
+class Arrays_PrintCommonElementFromTwoArrays {
 
 	public static void main(String[] arg) {
 		int[] a = { 1, 3, 5, 7, 9 };
@@ -14,17 +14,42 @@ public class Arrays_PrintCommonElementFromTwoArrays {
 		for (int i = 0; i < a.length; i++) {
 			for (int j = 0; j < b.length; j++) {
 				if (a[i] == b[j]) {
-
 					al.add(a[i]);
-					//break;
 				}
 			}
 		}
-		System.out.println(al);
+		System.out.println("CommonElementArrayListWithoutMethod: "+al);
 		Object[] convertArray = al.toArray(); ///covert ArrayList to Arrays
-		System.out.println(Arrays.toString(convertArray));
+		System.out.println("CommonElementArrayWithoutMethod: "+Arrays.toString(convertArray));
 	}
 }
+
+//After creating method
+class Arrays_PrintCommonElementFromTwoArraysAfterCreatingMethod {
+
+	int[] a = { 1, 3, 5, 7, 9 };
+	int[] b = { 1, 5, 3, 6, 9 };//output= 1,3,5,9
+
+	public ArrayList<Integer> commonElement(int[] a, int[] b) {
+		ArrayList<Integer> al = new ArrayList<Integer>();
+		for (int i = 0; i < a.length; i++) {
+			for (int j = 0; j < b.length; j++) {
+				if (a[i] == b[j]) {
+					al.add(a[i]);
+				}
+			}
+		}
+		return al;
+	}
+	public static void main(String[] args) {
+		
+		Arrays_PrintCommonElementFromTwoArraysAfterCreatingMethod obj = new Arrays_PrintCommonElementFromTwoArraysAfterCreatingMethod();
+		ArrayList<Integer> result = obj.commonElement(obj.a, obj.b);
+		System.out.println("CommonElementArrayListWithMethod: "+result);
+	}
+
+}
+
 /*for (Object result : al) {
 	
 	System.out.println(result);

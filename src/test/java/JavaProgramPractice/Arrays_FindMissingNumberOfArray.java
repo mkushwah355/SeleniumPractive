@@ -19,8 +19,9 @@ public class Arrays_FindMissingNumberOfArray {
 			sum2 = sum2 + i;
 		}
 		System.out.println("Sum of 1 to 6 no: " + sum2);
-
-		System.out.println("missing no. is: " + (sum2 - sum1));
+		sum2= sum2-sum1;
+		
+		System.out.println("missing no. is: " +sum2);
 	}
 }
 

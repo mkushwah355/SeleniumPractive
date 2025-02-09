@@ -1,10 +1,13 @@
 package JavaProgramPractice;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.TreeMap;
 
-//Remove second highest element from HashMap with for loop.
-public class Arrays_SecondHighestElementFromHashMapWithForLoop {
+//Aim: Remove second highest element from HashMap with for loop.
+ class Arrays_SecondHighestElementFromHashMapWithForLoop {
     public static void main(String[] args) {
     	
     Map<String, Integer> map= new HashMap<String, Integer>();	
@@ -47,3 +50,38 @@ public class Arrays_SecondHighestElementFromHashMapWithForLoop {
 			}*/    	
     }
 }
+
+//Aim: Remove second highest element from HashMap with for loop using collection methods.
+
+ class Arrays_SecondHighestElementFromHashMapThroughCollection {
+
+ 	public static void main(String[] args) {
+
+ 		Map<String, Integer> map = new HashMap<String, Integer>();
+ 		map.put("a", 10);
+ 		map.put("b", 3);
+ 		map.put("c", 15);//remove
+ 		map.put("d", 20);
+ 		map.put("e", 7);
+
+ 		Map<Integer, String> sortedMap = new TreeMap<Integer, String>();
+
+ 		for (Map.Entry<String, Integer> loop1 : map.entrySet()) {
+
+ 			sortedMap.put(loop1.getValue(), loop1.getKey());
+ 		}
+ 		//System.out.println(sortedMap);
+
+ 		List<Integer> list = new ArrayList<Integer>(sortedMap.keySet());
+ 		Integer secondLast = list.get(list.size() - 2);
+
+ 		list.remove(secondLast);
+ 		
+ 		System.out.println("Second highest element removed(15): "+list);
+
+ 	}
+
+ }
+ 
+ 
+ 

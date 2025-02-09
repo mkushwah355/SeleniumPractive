@@ -1,25 +1,48 @@
 package JavaProgramPractice;
-
 import java.util.Arrays;
 
-//Sort array with Arrays.sort() method
-public class Arrays_SortMethod {
+//Aim: Sort array with Arrays.sort() method.
+//without creating method
+class Arrays_SortMethod {
+	
     public static void main(String[] args) {
     	
     	int[] arr= {11,12,45,9,10};
-//to sort array    	
+   	
     	Arrays.sort(arr);
-    	System.out.println("Sorted Array: "+Arrays.toString(arr));
+    	//System.out.println("Sorted Array: "+Arrays.toString(arr));
     	
-//to store sorted array in variable.   	
+//we cannot store Arrays.sort() in any variable as its return type is void.
+//So, in order to store in variable, we need to clone original array and then sort it	  	
     	
-    	int[] sortArr= arr.clone(); //clone the original array and then sort it. 
-    								//We cannot directly store Arrays.sort() in a variable bcs it returns void.
-    	Arrays.sort(sortArr);
-    	
-    	System.out.println("Sorted Array after cloning: "+Arrays.toString(sortArr));
-    	
-    	
-    	
+    	int[] sortArr= arr.clone(); 
+    	Arrays.sort(sortArr);    	
+    	System.out.println("Sorted Array after cloning(withoutMethod): "+Arrays.toString(sortArr));   	
     }
+}
+
+//Sort array with Arrays.sort() method
+//after creating method.
+class Arrays_SortMethodAfterCreatingMethod {
+	
+	int[] array = { 11, 12, 45, 9, 10 };
+
+	public int[] sortMethod(int[] a) {
+
+		Arrays.sort(a);//to sort array 
+		//System.out.println("Sorted Array: " + Arrays.toString(a));
+		
+		//we cannot store Arrays.sort() in any variable as its return type is void.
+		//So, in order to store in variable, we need to clone original array and then sort it		    	
+		int[] sortArr = a.clone();
+		Arrays.sort(sortArr);
+		return sortArr;
+	}
+	
+	public static void main(String[] args) {
+		
+		Arrays_SortMethodAfterCreatingMethod obj = new Arrays_SortMethodAfterCreatingMethod();
+		int[] result = obj.sortMethod(obj.array);
+		System.out.println("Sorted Array after cloning(withMethod): " + Arrays.toString(result));
+	}
 }

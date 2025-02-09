@@ -5,7 +5,7 @@ package JavaProgramPractice;
 	3 1 7
 	1 2 9*/
 
-public class Arrays_Martrix3By3_MinimumValue {
+public class Arrays_Matrix3By3_MinimumValue {
 
 	public static void main(String[] arg) {
 

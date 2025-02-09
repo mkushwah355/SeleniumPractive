@@ -8,8 +8,8 @@ public class List_uniqueElements {
 	
 	public static void main(String []arg) {
 		
-		String []a1= {"A","C","D","B"};
-		String []a2= {"H","G","C","E"};
+		String[] a1= {"A","C","D","B"};
+		String[] a2= {"H","G","C","E"};
 		
 		ArrayList<String> list1= new ArrayList<String>(Arrays.asList(a1));
 		ArrayList<String> list2= new ArrayList<String>(Arrays.asList(a2));
