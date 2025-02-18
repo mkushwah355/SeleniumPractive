@@ -4,17 +4,17 @@ import java.util.Scanner;
 class String_reverseEachwordMayankTrick{
 	public static void main(String[]arg) {
 		
-		String s= "My name is Mayank";
-		String[] str=s.split("\\s+");//[My, name, is, Mayank]
-		String c="";
+		String str= "My name is Mayank";
+		String[] s1=str.split("\\s+");//[My, name, is, Mayank]
+		String s3="";
 		
-		for(int i=0;i<str.length;i++) {
-			String d=str[i];                //My------name-----is----Mayank
-			for(int j=d.length()-1;j>=0;j--) {
-				char e=d.charAt(j);
-				c=c+e;
-			}c=c+" ";			
-		}System.out.println(c);	//output= yM eman si knayaM 
+		for(int i=0;i<s1.length;i++) {
+			String a=s1[i];                //My------name-----is----Mayank
+			for(int j=a.length()-1;j>=0;j--) {
+				char s2=a.charAt(j);
+				s3=s3+s2;
+			}s3=s3+" ";			
+		}System.out.println(s3);	//output= yM eman si knayaM 
 	}
 }
 //Aim1: To print reverse of each word in given sentence with for loop

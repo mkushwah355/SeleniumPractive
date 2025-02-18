@@ -4,11 +4,13 @@ import java.util.Map;
 import java.util.Set;
 
 //Aim: Print duplicate and count of each duplicate character of string.
-public class _17String_PrintDuplicateCharacterAndCountOfEachChar {
+
+class _17String_PrintDuplicateCharacterAndCountOfEachChar {
 	public static void main(String[] args) {
 
 		String str = "programming";
 		char[] CharStr = str.toCharArray(); //java
+		//String[] CharStr= str.split(""); //split will also work here
 
 		Map<Character, Integer> hm = new HashMap<Character, Integer>();
 

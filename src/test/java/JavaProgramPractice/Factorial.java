@@ -1,6 +1,6 @@
 package JavaProgramPractice;
 
-//Java program to print factorial of given number.
+//Aim: Java program to print factorial of given number.
 public class Factorial {
 
 	public static void main(String[] args) {

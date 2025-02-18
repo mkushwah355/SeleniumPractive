@@ -9,7 +9,8 @@ class _15String_removeDuplicateCharacterWITHOUTCollection {
 		
 		String s1 = "programming";
 		char[] s2 = s1.toCharArray();
-
+	//	String[] s2=s1.split("");// split will also work to split string into array.
+		
 		StringBuilder sb = new StringBuilder();
 
 		for (int i = 0; i < s2.length; i++) {

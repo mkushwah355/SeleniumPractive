@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-//Print duplicate and count of each duplicate character of string.
+//Print maximum occurrence of duplicate character and what are those. 
 //This program is same as of "String_PrintDuplicateCharacterAndCountOfEachChar"
 public class _18String_PrintMaximumOccuranceOfCharacter {
 	public static void main(String[] args) {
@@ -27,10 +27,10 @@ public class _18String_PrintMaximumOccuranceOfCharacter {
 
 		Set<Map.Entry<Character, Integer>> entrySet = hm.entrySet();
 
-		for (Map.Entry<Character, Integer> loop2 : entrySet) {
+		for (Map.Entry<Character, Integer> loop2 : entrySet) {//print max count
 
 			if (maxCount < loop2.getValue()) { //0<1 //1<2 //2<no	//maxCount=2
-				maxCount = loop2.getValue(); //0=1 //1=2 //will not come inside if condition
+				maxCount = loop2.getValue();  //0=1 //1=2 //will not come inside if condition
 			}
 		}
 		System.out.println("maxCount value from loop2: "+maxCount);//maxCount=2
