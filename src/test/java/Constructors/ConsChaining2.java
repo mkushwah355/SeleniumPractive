@@ -1,4 +1,4 @@
-package JavaIntPrograms;
+package Constructors;
 
 /*class ConsChaining {  
 
@@ -36,7 +36,7 @@ class ConsChaining1 extends Const2{
 	ConsChaining1(){
 		this(1,"s");
 	}}
-	public class ConsChaining{ 
+	public class ConsChaining2{ 
 	
 	public static void main (String []arg) {
 		ConsChaining1 s1= new ConsChaining1();

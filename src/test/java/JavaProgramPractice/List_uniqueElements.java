@@ -3,8 +3,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 
-
-public class List_uniqueElements {
+//Aim: Print unique elements of two diff string through collection.
+class List_uniqueElements {
 	
 	public static void main(String []arg) {
 		

@@ -11,7 +11,7 @@ import java.util.List;
 		 int[] a= {1, 0, 5, 2, 9, 3, 0, 4, 7, 0, 5, 6, 0, 1};
 		
 		 int count=0;
-//fill all non-zero numbers		 
+//fill all non-zero numbers	to the starting of array	 
 		 for(int i=0;i<a.length;i++) {
 			 if(a[i]!=0) {   	//a[1]!=0//a[0]!=0//a[5]!=0  //a[2]!=0
 				 a[count]=a[i]; //a[0]=1 //skip	  //a[1]=a[5]//a[2]=[2]

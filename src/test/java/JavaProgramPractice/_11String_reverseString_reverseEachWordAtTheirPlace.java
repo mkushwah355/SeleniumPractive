@@ -1,6 +1,7 @@
 package JavaProgramPractice;
 
-public class _11String_reverseString_reverseEachWordAtTheirPlace {
+//Aim: Reverse string and reverse each word at their place.
+class _11String_reverseString_reverseEachWordAtTheirPlace {
 
 	public static void main (String[]arg) {
 		

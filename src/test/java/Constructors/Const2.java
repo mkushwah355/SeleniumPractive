@@ -1,4 +1,4 @@
-package JavaIntPrograms;
+package Constructors;
 
 
 class Const2{

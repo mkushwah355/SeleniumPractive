@@ -1,4 +1,4 @@
-package JavaIntPrograms;
+package Constructors;
 
 public class Constructors {
 	

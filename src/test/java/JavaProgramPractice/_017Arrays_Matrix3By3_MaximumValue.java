@@ -1,6 +1,6 @@
 package JavaProgramPractice;
 
-//Print the minimum value from 3x3 matrix
+//Print the maximum value from 3x3 matrix
 /*	2 4 5
 	3 1 7
 	1 2 9*/

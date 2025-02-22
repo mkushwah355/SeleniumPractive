@@ -2,8 +2,7 @@ package JavaProgramPractice;
 
 //Aim: Reverse 1st & last digit of a number WITHOUT converting to string (input:12345 output:52341 )
  class Int_4SwapFirstLastInteger {
-	public static void main(String[] args) {
-		
+	public static void main(String[] args) {		
 		int num= 12345;
 		
 		int lastDigit;
@@ -29,12 +28,12 @@ package JavaProgramPractice;
 		System.out.println("removed first digit: "+b);
 		
 //remove last digit		
-		num =b/10; //2345/10= 234.5= 234
-		System.out.println("removed last digit: "+num);
+		int c =b/10; //2345/10= 234.5= 234
+		System.out.println("removed last digit: "+c);
 		
 //add all numbers		
-		num = (lastDigit * (int)Math.pow(10, power)) + num * 10 + firstDigit; //50000+2340+1= 52341
-		System.out.println("result: "+num);
+		int d = (lastDigit * (int)Math.pow(10, power)) + c * 10 + firstDigit; //50000+2340+1= 52341
+		System.out.println("result: "+d);
 		
 		/*		5*10*3=50000
 				234*10= 2340
@@ -55,18 +54,21 @@ class Int_SwapFirstLastIntegerUsingString {
  		String a=Integer.toString(num);
  		System.out.println(num);
  		
- //Extract the first and last characters		
+ //Extract the first, last & mid characters		
  		char firstDigit=a.charAt(0); 
  		System.out.println("First digit: "+firstDigit);//1
  		
  		char lastDigit=a.charAt(a.length()-1);
  		System.out.println("Last digit: "+lastDigit);//5
  		
+ 		String mid= a.substring(1, a.length() - 1);
+ 		System.out.println("Mid characters: "+mid);//234
+ 		
  //Create the new string with the first and last characters swapped		
  //substring(int beginIndex, int endIndex): This method returns a new string that is a substring of the original string. 
  //The substring begins at the specified beginIndex and extends to the character at index endIndex - 1	
  		
-	String newString = lastDigit + a.substring(1, a.length() - 1) + firstDigit;
+	String newString = lastDigit + mid + firstDigit;
  	System.out.println("New string after swapping: "+newString);
  		
  //Convert the new string back to an integer		
@@ -80,9 +82,3 @@ Integer: This is a wrapper class for the primitive data type int in Java.
 toString(num): This is a static method in the Integer class. It takes an integer argument and converts it to a string.
 
 */
-
-
-
-
-
-

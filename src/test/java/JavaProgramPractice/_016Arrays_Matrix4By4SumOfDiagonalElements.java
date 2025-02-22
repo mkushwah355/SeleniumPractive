@@ -30,7 +30,7 @@ class Arrays_MatrixSumOfDiagonalElements2 {
 
 		int primary = 0;
 		int secondary = 0;
-		int count = 0;
+		
 //primary=left to right
 		for (int i = 0; i < a.length; i++) {
 			for (int j = 0; j < a[i].length; j++) {
@@ -38,8 +38,6 @@ class Arrays_MatrixSumOfDiagonalElements2 {
 				if (i == j) {
 					primary = primary + a[i][j];
 				}
-
-				count++;
 			}
 		}
 		System.out.println("primary-left to right: " + primary);
@@ -50,7 +48,6 @@ class Arrays_MatrixSumOfDiagonalElements2 {
 				if (i + j == a.length - 1) {
 					secondary = secondary + a[i][j];
 				}
-				count++;
 			}			
 		}System.out.println("secondary-right to left: " + secondary);
 

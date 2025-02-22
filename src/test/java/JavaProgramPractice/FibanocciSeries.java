@@ -4,7 +4,7 @@ package JavaProgramPractice;
 class FibanocciSeries {
 
 	public static void main(String[] arg) {
-		
+
 		int a = 0;
 		int b = 1;
 		int sum;
@@ -17,10 +17,35 @@ class FibanocciSeries {
 	}//output= 1,2,3,5,8,13,21
 }
 
+//Aim: Check given number belongs to fabonacci series.
+class FibanocciSeriesCheckGivenNumber {
+	public static void main(String[] arg) {
+
+		int x = 13;
+		int a = 0, b = 1, sum = 0;
+		boolean isFabonacci=false;
+		
+		for (int i = 0; i < x; i++) {
+			sum = a + b;
+			a = b;
+			b = sum;
+			if(sum==x) {
+				isFabonacci=true;
+				break;
+			}
+		}
+		if(isFabonacci) {
+			System.out.println("Number belongs to fabonacci series");
+		}else {
+			System.out.println("Not a fabonacci series number");
+		}
+	}
+}
+
 //Aim: Print Fibanocci series with while loop.
 class FibanocciSeriesWithWhileLoop {
 	public static void main(String[] arg) {
-		
+
 		int i = 1;
 		int a = 0;
 		int b = 1;
@@ -34,7 +59,7 @@ class FibanocciSeriesWithWhileLoop {
 
 			i++;
 		}
-	}   //output= 0,1,2,3,5,8,13,21
+	} //output= 0,1,2,3,5,8,13,21
 }
 /*Logic: 
 1. We need to decide how many numbers we want to print in series(it will decide 'i' value).

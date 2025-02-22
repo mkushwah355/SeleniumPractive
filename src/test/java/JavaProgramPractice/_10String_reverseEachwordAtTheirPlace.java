@@ -1,6 +1,7 @@
 package JavaProgramPractice;
 import java.util.Scanner;
 //
+//Aim1: To print reverse of each word in given sentence
 class String_reverseEachwordMayankTrick{
 	public static void main(String[]arg) {
 		

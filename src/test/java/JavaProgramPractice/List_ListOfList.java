@@ -1,8 +1,8 @@
 package JavaProgramPractice;
-
 import java.util.ArrayList;
 import java.util.List;
 
+//Aim: Create list of list and iterate.
 public class List_ListOfList {
 
 	public static void main (String[]arg) {

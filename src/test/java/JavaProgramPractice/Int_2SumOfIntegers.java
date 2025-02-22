@@ -1,6 +1,6 @@
 package JavaProgramPractice;
 
-//Sum of integers
+//Aim: Sum of integers
 class Int_2SumOfIntegers {
 	 
 	 public static void main (String[]arg) {

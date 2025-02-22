@@ -1,6 +1,6 @@
 package JavaProgramPractice;
 
-//Count number of occurrence after creating method
+//Count number of occurrence of character after creating method
 class String_CountNoOfOccurancesMethod{
 	
 	public static void main (String []arg) {

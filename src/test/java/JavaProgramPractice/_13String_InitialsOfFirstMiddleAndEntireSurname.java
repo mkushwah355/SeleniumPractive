@@ -1,6 +1,6 @@
 package JavaProgramPractice;
 
-//Print initials of first and middle name and entire surname.
+//Aim: Print initials of first and middle name and entire surname.
 class _13String_InitialsOfFirstMiddleAndEntireSurname {
 	public static void main(String[] args) {
 

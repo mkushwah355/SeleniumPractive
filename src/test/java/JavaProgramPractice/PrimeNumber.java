@@ -2,23 +2,31 @@ package JavaProgramPractice;
 
 //Aim: Check whether given number is prime or not
 class PrimeNumber {
+	static boolean flag = false;
 
 	public static void main(String[] arg) {
+		int num = 8;
 
-		int a = 11;
-		boolean flag = false;
+		if (isPrime(num)) {
+			System.out.println("prime");
+		} else {
+			System.out.println("not prime");
+		}
+	}
 
-		for (int i = 2; i <= a / 2; i++) {
-			if (a % i == 0) {
-				flag = true;
-				break;
+	public static boolean isPrime(int num) {
+
+		if (num <= 1) {
+			return flag = false;
+		}
+		for (int i = 2; i < num; i++) {
+			if (num % i == 0) {
+				return flag = false;
 			}
 		}
-		if (flag)
-			System.out.println("Not a prime number");
-		else
-			System.out.println("It is prime number");
+		return flag = true;
 	}
+
 }
 
 //Aim: Java program to check prime numbers in range of 1 to 10.
@@ -37,6 +45,7 @@ class PrimeNumber_withMethod {
 		}
 		return true; // No divisors found, n is prime
 	}
+
 	public static void main(String[] args) {
 		int a = 1;
 		int b = 10;

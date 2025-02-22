@@ -1,5 +1,7 @@
 package JavaProgramPractice;
 
+
+//Aim: Difference b/w "==" & "equal" method.
 public class equalOpertor {
 
 	public static void main(String[] arg) {

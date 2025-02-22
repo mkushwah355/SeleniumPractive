@@ -1,17 +1,25 @@
 package faltuCode;
 
+import java.util.*;
+import java.util.TreeSet;
+
 class practice {
-
-	public static void main(String[] args) {
-
-		int a = 12345;
-		int reverseInt = 0;
-
-		while (a !=0) {
-			int lastDigit = a % 10;                   //5                   //4------------------get the last digit
-			reverseInt = reverseInt * 10 + lastDigit; //0*10+5=5            //5*10+4=54----------Build the reversed number
-			a = a / 10;                               //12345/10=1234.5= 1234//1234/10=123.5=123-Remove the last digit
-		}
-		System.out.println("Reverse integer value: " + reverseInt);
-	}
-}
+    public static void main(String[] args) {
+  
+        int[] a= {1,2,5,3,4};//
+        int[] b= {2,7,1,3,0};
+     
+        ArrayList<Integer> al= new ArrayList<Integer>();
+        for(int i=0;i<a.length;i++) {
+        	for(int j=0; j<b.length;j++) {
+        	
+        	if(a[i]==b[j]) {
+        		//System.out.print(a[i]+","+b[j]);
+        		al.add(a[i]);
+        	}
+        }   
+    }System.out.println(al);
+    for(Integer loop1:al) {
+    	System.out.println(loop1);
+    } 
+}}

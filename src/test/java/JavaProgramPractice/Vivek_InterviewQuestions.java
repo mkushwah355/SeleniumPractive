@@ -1,4 +1,4 @@
-package JavaIntPrograms;
+package JavaProgramPractice;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -8,7 +8,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 
-public class InterviewQuestions {
+public class Vivek_InterviewQuestions {
 
 	public static boolean isNumberPrime(int num) {
 
@@ -370,27 +370,27 @@ public class InterviewQuestions {
 
 	//*************************************************************//
 	public static void main(String[] args) {
-		// InterviewQuestions.isNumberPrime(12);
-		//InterviewQuestions.swapString();
-		// InterviewQuestions.fibonacci(8);
-		// InterviewQuestions.sumofDigits(123);
-		// InterviewQuestions.reversetheNumber(45823);
-		// InterviewQuestions.allZerosToRight();
-		// InterviewQuestions.allZerosToLeft();
-		 InterviewQuestions.charCount("aabbbbccd");
-		// InterviewQuestions.duplicateChar("vivek verma");
-		//InterviewQuestions.reverseString("Vivek Verma");
-		//InterviewQuestions.reverseScentence("Hello Java! This is a test");
-		//InterviewQuestions.reverseEachword("Vivek Verma");
-		// InterviewQuestions.findDuplicates();
-		// InterviewQuestions.removeDuplicatesFromArray();
-		// InterviewQuestions.sumofSubArray();
-		// InterviewQuestions.maximumSumofSubArray();
-		// InterviewQuestions.maxProfit();
-		// InterviewQuestions.subStringMethod();
-		// InterviewQuestions.consecutiveOccuranceofNumber();
-		// InterviewQuestions.printUniqueChar();
-		//InterviewQuestions.convertAlternateCase("aAbBcCdD");
+		// Vivek_InterviewQuestions.isNumberPrime(12);
+		//Vivek_InterviewQuestions.swapString();
+		// Vivek_InterviewQuestions.fibonacci(8);
+		// Vivek_InterviewQuestions.sumofDigits(123);
+		// Vivek_InterviewQuestions.reversetheNumber(45823);
+		// Vivek_InterviewQuestions.allZerosToRight();
+		// Vivek_InterviewQuestions.allZerosToLeft();
+		 Vivek_InterviewQuestions.charCount("aabbbbccd");
+		// Vivek_InterviewQuestions.duplicateChar("vivek verma");
+		//Vivek_InterviewQuestions.reverseString("Vivek Verma");
+		//Vivek_InterviewQuestions.reverseScentence("Hello Java! This is a test");
+		//Vivek_InterviewQuestions.reverseEachword("Vivek Verma");
+		// Vivek_InterviewQuestions.findDuplicates();
+		// Vivek_InterviewQuestions.removeDuplicatesFromArray();
+		// Vivek_InterviewQuestions.sumofSubArray();
+		// Vivek_InterviewQuestions.maximumSumofSubArray();
+		// Vivek_InterviewQuestions.maxProfit();
+		// Vivek_InterviewQuestions.subStringMethod();
+		// Vivek_InterviewQuestions.consecutiveOccuranceofNumber();
+		// Vivek_InterviewQuestions.printUniqueChar();
+		//Vivek_InterviewQuestions.convertAlternateCase("aAbBcCdD");
 		
 		
 		

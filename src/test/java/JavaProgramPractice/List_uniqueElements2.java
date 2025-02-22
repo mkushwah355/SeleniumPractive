@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.ArrayList;
 
-
+//Aim: print all unique elements, print common elements	& remove common elements
 class List_uniqueElements2 {
 
 	public static void main(String[] arg) {

@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-//Compare two list and print common elements on console
+//Aim: Compare two list and print common elements on console
 public class List_commonElements {
 		
 		    public static void main(String[] args) {
