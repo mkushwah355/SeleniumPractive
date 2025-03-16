@@ -43,7 +43,7 @@ public class BrokenLinks_2 {
 //get the response code and message of "href" attribute
 			int respCode = http.getResponseCode();
 			String respMsg = http.getResponseMessage();
-			System.out.println(respCode + respMsg);
+			System.out.println(url+" "+respCode + respMsg);
 
 		}
 

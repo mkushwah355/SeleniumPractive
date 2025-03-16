@@ -1,13 +1,13 @@
-package faltuCode;
-
+package seleniumConcepts;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.JavascriptExecutor;
 import java.util.ArrayList;
+import java.util.Set;
 
-public class practice2 {
+public class SwitchTo_Window_MultipleWindows {
     public static void main(String[] args) throws InterruptedException {
-        // Set up WebDriver (Ensure you have chromedriver in system path)
+   
         WebDriver driver = new ChromeDriver();
 
         // List of URLs to open in different tabs
@@ -23,33 +23,33 @@ public class practice2 {
         driver.get(urls[0]);
 
         for (int i = 1; i < urls.length; i++) {
-            // Open a new tab
+// Open a new tab
             ((JavascriptExecutor) driver).executeScript("window.open();");
             
-            // Update the list of window handles
-            ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
-
-            // Switch to the new tab
+// Update the list of window handles
+            Set<String> allWindow= driver.getWindowHandles();
+            ArrayList<String> tabs = new ArrayList<>(allWindow);
+        
+// Switch to the new tab
             driver.switchTo().window(tabs.get(i));
 
-            // Open the URL in the new tab
+// Open the URL in the new tab
             driver.get(urls[i]);
 
-            // Small delay to allow page loading
+// Small delay to allow page loading
             Thread.sleep(2000);
         }
 
-        // Example: Printing the title of each tab
+// Example: Printing the title of 4th tab
         ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
-        String s1="";
+        
+        String tab4Title="";
         for (int i = 1; i < tabs.size(); i++) {
             driver.switchTo().window(tabs.get(4));
-            s1=driver.getTitle();
+            tab4Title=driver.getTitle();
             
         }
-        System.out.println("Tab Title: " +s1 );
-        // Keep the browser open for a while before closing
-        Thread.sleep(5000);
+        System.out.println("4th Tab Title: " +tab4Title );
         driver.quit();
     }
 }

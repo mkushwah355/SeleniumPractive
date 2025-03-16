@@ -17,13 +17,13 @@ public class MaximizeDesiredWindowSize {
 		driver.manage().window().maximize();
 		Thread.sleep(6000);
 		
-		//to open window in desired size
+//to set the size of a web element or browser window.
 		Dimension b=new Dimension(300,1020);
 		driver.manage().window().setSize(b);
 		
 		Thread.sleep(6000);
 		
-		//to minimize open window
+//to set the position of a web element or browser window (in case to open multiple window)
 		Point d= new Point(0,3000);
 		driver.manage().window().setPosition(d);
 		

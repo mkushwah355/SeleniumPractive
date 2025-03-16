@@ -59,7 +59,8 @@ public class PackagesTab_PageClass_FindBy_Expedia {
 	public void clickSearchButton() {
 		searchButton.click();
 	}
-	
+//We don't need to initialize the WebDriver in below method bcs caller will provide the initialized version of WebDriver in it
+//It is just a method which is accepting argument object as WebDriver type and returning it.
 	public WebDriver getDriver(WebDriver driver){
 		return driver;
 	}
