@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-14T08:20:07Z" name="Default suite" finished-at="2025-03-14T08:20:27Z" duration-ms="19409">
+  <suite started-at="2025-03-18T06:41:45Z" name="Default suite" finished-at="2025-03-18T06:42:16Z" duration-ms="30256">
     <groups>
     </groups>
-    <test started-at="2025-03-14T08:20:07Z" name="Default test" finished-at="2025-03-14T08:20:27Z" duration-ms="19409">
+    <test started-at="2025-03-18T06:41:45Z" name="Default test" finished-at="2025-03-18T06:42:16Z" duration-ms="30256">
       <class name="faltuCode.practice">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:faltuCode.practice@4eb386df]" started-at="2025-03-14T13:50:07Z" name="beforeMethod" finished-at="2025-03-14T13:50:10Z" duration-ms="3028" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:faltuCode.practice@289710d9]" started-at="2025-03-18T12:11:45Z" name="beforeMethod" finished-at="2025-03-18T12:11:53Z" duration-ms="7340" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="test()[pri:0, instance:faltuCode.practice@4eb386df]" started-at="2025-03-14T13:50:10Z" name="test" finished-at="2025-03-14T13:50:27Z" duration-ms="16094" status="FAIL">
+        <test-method signature="test()[pri:0, instance:faltuCode.practice@289710d9]" started-at="2025-03-18T12:11:53Z" name="test" finished-at="2025-03-18T12:12:15Z" duration-ms="22626" status="FAIL">
           <exception class="java.net.MalformedURLException">
             <message>
               <![CDATA[Cannot invoke "String.length()" because "spec" is null]]>
@@ -54,7 +54,7 @@ Caused by: java.lang.NullPointerException: Cannot invoke "String.length()" becau
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:faltuCode.practice@4eb386df]" started-at="2025-03-14T13:50:27Z" name="afterMethod" finished-at="2025-03-14T13:50:27Z" duration-ms="254" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:faltuCode.practice@289710d9]" started-at="2025-03-18T12:12:15Z" name="afterMethod" finished-at="2025-03-18T12:12:16Z" duration-ms="267" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
