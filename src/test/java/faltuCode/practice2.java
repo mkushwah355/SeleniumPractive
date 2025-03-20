@@ -1,55 +1,6 @@
 package faltuCode;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.JavascriptExecutor;
-import java.util.ArrayList;
-
-public class practice2 {
-    public static void main(String[] args) throws InterruptedException {
-        // Set up WebDriver (Ensure you have chromedriver in system path)
-        WebDriver driver = new ChromeDriver();
-
-        // List of URLs to open in different tabs
-        String[] urls = {
-            "https://www.google.com",
-            "https://www.github.com",
-            "https://www.stackoverflow.com",
-            "https://accounts.google.com/",
-            "https://www.udemy.com/"
-        };
-
-        // Open the first URL
-        driver.get(urls[0]);
-
-        for (int i = 1; i < urls.length; i++) {
-            // Open a new tab
-            ((JavascriptExecutor) driver).executeScript("window.open();");
-            
-            // Update the list of window handles
-            ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
-
-            // Switch to the new tab
-            driver.switchTo().window(tabs.get(i));
-
-            // Open the URL in the new tab
-            driver.get(urls[i]);
-
-            // Small delay to allow page loading
-            Thread.sleep(2000);
-        }
-
-        // Example: Printing the title of each tab
-        ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
-        String s1="";
-        for (int i = 1; i < tabs.size(); i++) {
-            driver.switchTo().window(tabs.get(4));
-            s1=driver.getTitle();
-            
-        }
-        System.out.println("Tab Title: " +s1 );
-        // Keep the browser open for a while before closing
-        Thread.sleep(5000);
-        driver.quit();
-    }
-}
+//Aim: Go to W3School and get all the DB names
+//As of now W3School url is keep on loading which causing to execute remaining code after get(url).
+//We have to manually stop loading the url then remaining code is executing.
+public class practice2 {}

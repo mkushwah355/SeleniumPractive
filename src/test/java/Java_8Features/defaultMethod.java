@@ -17,7 +17,7 @@ interface Right{
 
 class defaultMethod implements Left,Right{
 //there is chance of ambiguity as implementing class getting same m1() method from Left and Right.
-//Either we override m1() or use super to get the interface implementation for m1().
+//Either, we override m1() or use super to get the interface implementation for m1().
 	public void m1() {
 		//System.out.println("Own implementation"); 
 		Left.super.m1();

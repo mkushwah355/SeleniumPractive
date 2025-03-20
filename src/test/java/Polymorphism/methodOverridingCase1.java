@@ -1,25 +1,29 @@
 package Polymorphism;
 
 //Case 1: Overriding and Access modifier
+class parentClass1 {
 
-class ABC {
-		
-	protected void show (){
-		
-		System.out.println("print 1");
-	}	
+	protected void method1() {
+		System.out.println("parentClass->method1");
+	}
+
+		void method2() {
+		System.out.println("parentClass1->method2");
+	}
 }
-
-class methodOverridingCase1 extends ABC{
+public class methodOverridingCase1 extends parentClass1 {
 	//child class method access modifier should be bigger than parent class method access modifier
 	//Public>protected>Default (bigger to smaller in terms of accessibility)
-	public void show(){
-		System.out.println("print 2");
+
+	public void method1() {
+		System.out.println("childClass->method1");
 	}
-	public static void main (String []arg){
-			ABC a=new ABC();
-			a.show();
-			methodOverridingCase1 b=new methodOverridingCase1();
-			b.show();
+
+	public static void main(String[] arg) {
+		parentClass1 a = new parentClass1();
+		a.method1();
+		methodOverridingCase1 b = new methodOverridingCase1();
+		b.method1();
+		b.method2();		
 	}
 }

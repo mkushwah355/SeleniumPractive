@@ -1,7 +1,7 @@
 package Object;
 
 //Below is java class which has method inside method.
-//we cannot direct declare method inside method. it can be achieved through local class
+//we cannot directly declare method inside method. it can be achieved through local class
 
  class methodWithinMethod {
 	

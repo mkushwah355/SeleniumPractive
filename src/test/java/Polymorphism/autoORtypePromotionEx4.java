@@ -8,6 +8,7 @@ public class autoORtypePromotionEx4 {
 		}
 //Object is parent class of all the class.	
 //If we want to print method from main method call then the class method should have some return type.			
+		
 		String methodOverloading(Object a, int b) {
 			return "Method2";
 		}

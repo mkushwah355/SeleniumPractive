@@ -5,12 +5,11 @@ class test {
 		System.out.println("print 1");
 	}	
 }
-	
 class methodOverriding extends test {
 	
 	void show(){
 		//super.show();
-		System.out.println("prints 2");
+		System.out.println("print 2");
 	}
 	
 	public static void main (String []arg){

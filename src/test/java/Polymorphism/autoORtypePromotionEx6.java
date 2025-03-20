@@ -1,6 +1,5 @@
 package Polymorphism;
 
-import java.sql.SQLDataException;
 import java.sql.SQLException;
 
 public class autoORtypePromotionEx6 {
