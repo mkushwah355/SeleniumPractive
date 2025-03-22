@@ -1,29 +1,31 @@
 package Abstraction;
-import Abstraction.AbstractClass;
+import Abstraction.AbstractClass1;
 //
 //abstract class which have abstract and non- abstract methods
- abstract class vehicle2 {
+abstract class vehicle2 {
 
-	abstract public int car() ; //abstract method
-	public int bus() {          //non-abstract method(Concrete method)
-	return 6;	
-	}	
+	abstract public int car(); //abstract method
+
+	public int bus() {         //non-abstract method(Concrete method)
+		return 6;
+	}
 }
 
 class subvehicle extends vehicle2 { //subclass extending the abstract class(implementation of abstract method)
-		public int car() {
-			return 4;}
-		void car2() {
-			System.out.println("car2");
-		}
-		;
-		}
+	public int car() {
+		return 4;
+	}
 
-class AbstractClass {                  //main class
-	public static void main (String []arg) {
-		subvehicle s1= new subvehicle();
+	void car2() {
+		System.out.println("car2");
+	}
+}
+
+class AbstractClass1 {
+	public static void main(String[] arg) {
+		subvehicle s1 = new subvehicle();
 		System.out.println(s1.car());
-		
+
 		System.out.println(s1.bus());
 		s1.car2();
 	}
