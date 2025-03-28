@@ -2,11 +2,13 @@ package Abstraction;
 //Constructor unique problem-1
 
 abstract class student {
-
-	abstract protected void m3();
-	abstract void m2();
-	final public void m1() {
-		System.out.println("m1");
+	
+	abstract void method1();
+	
+	abstract protected void protectedMethod2();
+	
+	final public void finalMethod3() {   //cannot override final method. but we can use final method as it is in child class if required.
+		System.out.println("student-> finalMethod3");
 	}
 
 	student() {
@@ -15,26 +17,28 @@ abstract class student {
 	}
 }
 
-class ConsUniqueProblem extends student {
-	public void m3() {
-		System.out.println("m3");
+class school extends student {
+	
+	void method1() {
+		System.out.println("school-> method1");
+		
 	}
-
-	void m2() {
-		System.out.println("m2");
+	public void protectedMethod2() {
+		System.out.println("school-> protectedMethod2");
 	}
-
-	ConsUniqueProblem(String name, int rollno) {
+	
+	school(String name, int rollno) {
 		super();
 		System.out.println(name + rollno);
 	}
-
+}
+class ConsUniqueProblem{
 	public static void main(String[] arg) {
 
-		ConsUniqueProblem s1 = new ConsUniqueProblem("mama", 12);
-		//System.out.println(name);
-		s1.m1();
-		s1.m2();
-		s1.m3();
+		school obj1 = new school("Rohit", 12);
+		
+		obj1.method1();
+		obj1.protectedMethod2();
+		obj1.finalMethod3(); //final method called after inheritance with the school class object.
 	}
 }

@@ -14,9 +14,6 @@ import cucumber.api.*;
 		)
 
 
-
 public class testRunner_loginPage {
-
-
 
 }

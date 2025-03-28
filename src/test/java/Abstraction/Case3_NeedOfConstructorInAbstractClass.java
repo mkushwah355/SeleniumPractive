@@ -9,8 +9,10 @@ abstract class Case3_NeedOfConstructorInAbstractClass1 {
 class Case3_NeedOfConstructorInAbstractClass extends Case3_NeedOfConstructorInAbstractClass1{
 	 int rollno;
 	 int marks;
+
 //we have to initialize parent class variables in child class every time.
 //if 100 variables initialize in 100 class then 100 lines of code will be added in each class. 	 
+	
 	Case3_NeedOfConstructorInAbstractClass(int rollno, int marks, String name, int age){
 		this.name=name;
 		this.age=age;
@@ -36,7 +38,7 @@ class Case3_NeedOfConstructorInAbstractClass extends Case3_NeedOfConstructorInAb
 	 int rollno;
 	 int marks; 
 //super keyword used to access the parent class constructor
-//Advantage-if 100 variables initialize in parent class then then we can access all 100 variables in single line of code.	 
+//Advantage-if 100 variables initialize in parent class then we can access all 100 variables in single line of code.	 
 	Case3_NeedOfConstructorInAbstractClass(int rollno, int marks, String name, int age){
 		super(name, age);
 		this.rollno=rollno;

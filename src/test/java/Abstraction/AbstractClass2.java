@@ -22,7 +22,7 @@ class Bus extends vehicle1 {
 	}
 }
 
- class AbstactClass2 {
+ class AbstractClass2 {
 	public static void main(String[] arg) {
 		Auto s1 = new Auto();
 		System.out.println(s1.getNoOfWheels());//3

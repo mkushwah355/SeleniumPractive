@@ -13,13 +13,14 @@ class EncapsulatedComponent1 {
 		 return name;
 }}
 
-class EncapsulatedComponent{
+class EncapsulatedComponent {
 	
 	public static void main (String []arg) {
 		EncapsulatedComponent1 s1= new EncapsulatedComponent1();
 		
-		System.out.println(s1.getName());
 		System.out.println(s1.setName("setter method"));
+		System.out.println(s1.getName());
+		
 			
 	}
 	

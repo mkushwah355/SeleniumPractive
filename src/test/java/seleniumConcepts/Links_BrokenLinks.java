@@ -14,7 +14,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 
-public class BrokenLinks {
+public class Links_BrokenLinks {
 
 	WebDriver driver;
 	String baseUrl = "https://www.expedia.co.in/";

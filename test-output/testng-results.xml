@@ -1,97 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-21T19:51:54Z" name="Default suite" finished-at="2025-03-21T19:51:55Z" duration-ms="978">
+  <suite started-at="2025-03-27T12:07:21Z" name="Default suite" finished-at="2025-03-27T12:07:38Z" duration-ms="16772">
     <groups>
     </groups>
-    <test started-at="2025-03-21T19:51:54Z" name="Default test" finished-at="2025-03-21T19:51:55Z" duration-ms="978">
-      <class name="selenium_Read_JDBC_ExternalFiles.JDBC_FeedMySqlDataToTestCase">
-        <test-method signature="test(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:selenium_Read_JDBC_ExternalFiles.JDBC_FeedMySqlDataToTestCase@388526fb]" started-at="2025-03-22T01:21:55Z" name="test" data-provider="driveTest" finished-at="2025-03-22T01:21:55Z" duration-ms="32" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[zerobalance]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[zerobc]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[123zb]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2025-03-27T12:07:21Z" name="Default test" finished-at="2025-03-27T12:07:38Z" duration-ms="16772">
+      <class name="seleniumConcepts.Links_AllLinks_WebDriverScope">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:seleniumConcepts.Links_AllLinks_WebDriverScope@531f4093]" started-at="2025-03-27T17:37:21Z" name="beforeMethod" finished-at="2025-03-27T17:37:31Z" duration-ms="10525" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method signature="test(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:selenium_Read_JDBC_ExternalFiles.JDBC_FeedMySqlDataToTestCase@388526fb]" started-at="2025-03-22T01:21:55Z" name="test" data-provider="driveTest" finished-at="2025-03-22T01:21:55Z" duration-ms="5" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[outstndgbalance]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[outbc]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[123ob]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="printNoOfLinks()[pri:0, instance:seleniumConcepts.Links_AllLinks_WebDriverScope@531f4093]" started-at="2025-03-27T17:37:31Z" name="printNoOfLinks" finished-at="2025-03-27T17:37:31Z" duration-ms="46" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method signature="test(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:selenium_Read_JDBC_ExternalFiles.JDBC_FeedMySqlDataToTestCase@388526fb]" started-at="2025-03-22T01:21:55Z" name="test" data-provider="driveTest" finished-at="2025-03-22T01:21:55Z" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[rewardcard]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[rewardcd]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[123rc]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- printNoOfLinks -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:seleniumConcepts.Links_AllLinks_WebDriverScope@531f4093]" started-at="2025-03-27T17:37:31Z" name="beforeMethod" finished-at="2025-03-27T17:37:38Z" duration-ms="6089" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method signature="test(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:selenium_Read_JDBC_ExternalFiles.JDBC_FeedMySqlDataToTestCase@388526fb]" started-at="2025-03-22T01:21:55Z" name="test" data-provider="driveTest" finished-at="2025-03-22T01:21:55Z" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[letscodeit]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[test@email.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[abcabc]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="scopeOfWebdriver()[pri:0, instance:seleniumConcepts.Links_AllLinks_WebDriverScope@531f4093]" started-at="2025-03-27T17:37:38Z" name="scopeOfWebdriver" finished-at="2025-03-27T17:37:38Z" duration-ms="70" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- selenium_Read_JDBC_ExternalFiles.JDBC_FeedMySqlDataToTestCase -->
+        </test-method> <!-- scopeOfWebdriver -->
+      </class> <!-- seleniumConcepts.Links_AllLinks_WebDriverScope -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

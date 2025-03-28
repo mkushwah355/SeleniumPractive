@@ -8,7 +8,7 @@ package Object;
 	void m1() {
 		System.out.println("Inside m1 method");
 		
-		class localClass{   //local class helped to create method inside method
+		class localClass {   //local class helped to create method inside method
 			void m2() {
 				System.out.println("Inside local class m2 method");}	
 		}
