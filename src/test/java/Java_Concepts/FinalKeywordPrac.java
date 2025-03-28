@@ -1,4 +1,4 @@
-package ExceptionHandling;
+package Java_Concepts;
 
 class FinalKeywordPrac {
 

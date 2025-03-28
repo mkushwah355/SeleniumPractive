@@ -13,7 +13,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 //Navigate to page and get all the links which are under "a" & "img" tag name.
 //Get response code and message of "href" attribute.
-public class BrokenLinks_2 {
+public class Links_BrokenLinks_2 {
 
 	WebDriver driver;
 	String baseUrl = "https://www.letskodeit.com/practice";
