@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="faltuCode.practice">
+      <class name="seleniumConcepts.Actions_MouseHover">
         <methods>
-          <include name="test"/>
+          <include name="test1"/>
           <include name="afterMethod"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- faltuCode.practice -->
+      </class> <!-- seleniumConcepts.Actions_MouseHover -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

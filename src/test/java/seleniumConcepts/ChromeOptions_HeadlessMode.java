@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-public class HeadlessMode {	  
+public class ChromeOptions_HeadlessMode {	  
 	
 	public static void main (String [] arg) {
 		

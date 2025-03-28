@@ -1,9 +1,11 @@
 package seleniumConcepts;
 import java.time.Duration;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -36,20 +38,31 @@ class Links_AllLinks_WebDriverScope{
 	 						  columndriver.findElements(By.tagName("a")).size();
 	 System.out.println("Discount section links: " +columndriver.findElements(By.tagName("a")).size());	
 	 
-//Click on each link in the column and check if the pages are opening.
-	 
+//Click on each link in the column and check if the pages are opening.	 
+
+	
 	 for(int i=1; i<columndriver.findElements(By.tagName("a")).size();i++) {
 		 
 		 String clickOnLinkTab= Keys.chord(Keys.CONTROL,Keys.ENTER);
 		 columndriver.findElements(By.tagName("a")).get(i).sendKeys(clickOnLinkTab);
 		 
 		 Set<String> windows= driver.getWindowHandles();
+
+//This code is not working from here due to broken link.		 
 		 
-		 for(String handles: windows) {
-			 driver.switchTo().window(handles);
-			 System.out.println(driver.getTitle());
-		 }
-		 
+			/* for(String handles: windows) {
+				 driver.switchTo().window(handles);
+				 System.out.println(driver.getTitle());
+			 }*/
+			/*Iterator<String> it=windows.iterator();
+			
+			while(it.hasNext())
+			{
+				
+			   driver.switchTo().window(it.next());
+			   System.out.println(driver.getTitle());
+			
+			}*/
 		 
 		 
 	 }
