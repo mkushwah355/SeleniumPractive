@@ -15,7 +15,7 @@ class practice{
 		for(String loop1:str1) {
 			result=result+loop1;
 		}
-		//mayank
+		//mayan
 		System.out.println(result);
 	}	
 }
