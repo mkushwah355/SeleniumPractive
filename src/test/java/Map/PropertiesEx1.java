@@ -9,8 +9,8 @@ public class PropertiesEx1 {
 		
 		Properties p= new Properties();
 		FileInputStream fis= new FileInputStream("config.properties");
-		p.load(fis);
-		System.out.println(p); //it will load whatever available in config.properties file
+		p.load(fis); //it will load whatever available in config.properties file
+		System.out.println(p); 
 		
 		String s= p.getProperty("name");
 		System.out.println(s);// tom

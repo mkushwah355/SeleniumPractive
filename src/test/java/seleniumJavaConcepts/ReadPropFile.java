@@ -23,15 +23,12 @@ public class ReadPropFile {
 
 	public static void main(String[] arg) throws IOException, Exception {
 		WebDriver driver = null;
-		// ini the properties class of java
-		Properties prop = new Properties();
-		// ini FileInputStream class of java to get the input file
-		FileInputStream ip = new FileInputStream("C:\\git projects\\SeleniumPractive\\config.properties");
-		// to load the input file
-		prop.load(ip);
 
-		// url reference variable created to read the URL key and its value from
-		String url = prop.getProperty("URL");
+		Properties prop = new Properties();// ini the properties class of java		
+		FileInputStream ip = new FileInputStream("C:\\git projects\\SeleniumPractive\\config.properties");// ini FileInputStream class of java to get the input file
+		prop.load(ip);// to load the input file
+
+		String url = prop.getProperty("URL");// url reference variable created to read the URL key and its value from
 		System.out.println("Launched url: " + url);
 		String browserName = prop.getProperty("browser");
 		String googleSearchBox = prop.getProperty("xpathOfGoogleSearchBox");
@@ -39,7 +36,7 @@ public class ReadPropFile {
 		String googleSearchButton = prop.getProperty("xpathOfGoogleSearchButton");
 		String browerType = prop.getProperty("browsername");
 
-		// to launch the broswer, need to ini chromedriver
+// to launch the broswer, need to ini chromedriver
 		if (browerType.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver",
 					"E:\\Automation\\selenium-java-4.18.1\\chromedriver\\chromedriver.exe");

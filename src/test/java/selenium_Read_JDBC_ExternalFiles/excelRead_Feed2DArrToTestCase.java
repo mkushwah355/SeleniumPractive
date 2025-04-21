@@ -4,11 +4,15 @@ import java.io.IOException;
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 
 public class excelRead_Feed2DArrToTestCase {
+	
+	FileInputStream file;
+	XSSFWorkbook path;
 	
 	@Test(dataProvider = "driveTest")
 	public void test(String username, String password) {
@@ -17,11 +21,11 @@ public class excelRead_Feed2DArrToTestCase {
 	}	
 	
 	@DataProvider(name="driveTest")
-	public static String[][] getData() throws IOException {
-		FileInputStream file = new FileInputStream("./src/test/resources/Book1_TestData.xlsx");
+	public String[][] getData() throws IOException {
+		file = new FileInputStream("./src/test/resources/Book1_TestData.xlsx");
 
-		XSSFWorkbook path = new XSSFWorkbook(file);
-		XSSFSheet sheet = path.getSheet("sheet1");
+		path = new XSSFWorkbook(file);
+		XSSFSheet sheet = path.getSheet("testdata");
 
 		int noOfRows = sheet.getPhysicalNumberOfRows();//4
 		int noOfColumns = sheet.getRow(0).getLastCellNum();//2		
@@ -42,8 +46,16 @@ public class excelRead_Feed2DArrToTestCase {
 	}
 
 	public static void main(String[] arg) throws IOException {
-		getData();
+		excelRead_Feed2DArrToTestCase obj1= new excelRead_Feed2DArrToTestCase();
+		obj1.getData();
 
 	}
+	
+	@AfterTest
+	public void tearDown() throws IOException {
+		file.close();
+		path.close();
+	}
+	
 
 }

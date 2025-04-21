@@ -1,11 +1,11 @@
-package faltuCode;
+package Java_Concepts;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.JavascriptExecutor;
 import java.util.ArrayList;
 import java.util.Set;
 
-public class practice {
+public class ThreadLocal_Ex1 {
     public static void main(String[] args) throws InterruptedException {
     	
     	WebDriver driver;

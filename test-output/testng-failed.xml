@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="seleniumConcepts.Actions_MouseHover">
+      <class name="ExtentReport.ExtentReport_RahulShetty">
         <methods>
-          <include name="test1"/>
-          <include name="afterMethod"/>
-          <include name="beforeMethod"/>
+          <include name="testMethod1"/>
+          <include name="config"/>
         </methods>
-      </class> <!-- seleniumConcepts.Actions_MouseHover -->
+      </class> <!-- ExtentReport.ExtentReport_RahulShetty -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
