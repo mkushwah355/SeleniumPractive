@@ -1,8 +1,7 @@
-package faltuCode;
-
+package Java_Programs;
 import java.util.*;
 
-class practice {
+class List_ListOfHashMap {
 	public static void main(String[] args) {
 
 		Map<String, Integer> h = new HashMap<String, Integer>();
@@ -15,7 +14,7 @@ class practice {
 //Convert Map Entries to a List
 		List<Map.Entry<String, Integer>> listEntry = new ArrayList<>(h.entrySet());
 		System.out.println("listEntry: "+listEntry); 
-	//Collections.sort(listEntry);//Collection.sort()-require comparable object
+	    //Collections.sort(listEntry);//Collection.sort()-require comparable object
 		
 		Collections.sort(listEntry, new Comparator<Map.Entry<String, Integer>>() {
 			public int compare(Map.Entry<String, Integer> obj1, Map.Entry<String, Integer> obj2) {
@@ -43,8 +42,7 @@ class practice {
 				return obj1.compareTo(obj2);}
 			}
 		);		
-		System.out.println("Sorted listKeys: "+listKeys);
-		
-		
+		System.out.println("Sorted listKeys: "+listKeys);		
 	}
 }
+

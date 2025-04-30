@@ -1,6 +1,6 @@
 package Java_Programs;
 
-//Aim: Java program to convert string to integer without using inbuild(integer.parse)
+//Aim: Java program to convert string to integer without using inbuild(integer.parseInt)
 class _04String_StringToIntegerWithoutParsing {
 
 	public static void main(String[] args) {

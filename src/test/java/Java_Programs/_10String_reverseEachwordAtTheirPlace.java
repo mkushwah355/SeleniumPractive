@@ -75,9 +75,9 @@ class reverseEachWordAdvForLoop {
 	String[] s2=s1.split("\\s+");
 	
 	
-	for(String s3:s2) {
-		for(int i=s3.length()-1;i>=0;i--) {
-			System.out.print(s3.charAt(i));
+	for(String loop1:s2) {
+		for(int i=loop1.length()-1;i>=0;i--) {
+			System.out.print(loop1.charAt(i));
 		}
 		System.out.print(" ");
 	}}}

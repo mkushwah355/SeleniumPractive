@@ -10,13 +10,10 @@ public class ChromeOptions_SSLCert {
 		
 		ChromeOptions option= new ChromeOptions();
 		option.setAcceptInsecureCerts(true);
-		
-		
+			
 		WebDriver driver= new ChromeDriver(option);
 		driver.get("https://expired.badssl.com/");
-		System.out.println(driver.getTitle());
-		
-		
+		System.out.println(driver.getTitle());		
 	}
 
 }

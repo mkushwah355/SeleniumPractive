@@ -19,7 +19,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class ReadPropFile {
+public class PropertyFile_Read_Write_1 {
 
 	public static void main(String[] arg) throws IOException, Exception {
 		WebDriver driver = null;
